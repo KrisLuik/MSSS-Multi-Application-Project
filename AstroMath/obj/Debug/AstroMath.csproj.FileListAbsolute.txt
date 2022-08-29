@@ -1,0 +1,6 @@
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\AstroMath\bin\Debug\AstroMath.dll
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\AstroMath\bin\Debug\AstroMath.pdb
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\AstroMath\obj\Debug\AstroMath.csproj.AssemblyReference.cache
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\AstroMath\obj\Debug\AstroMath.csproj.CoreCompileInputs.cache
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\AstroMath\obj\Debug\AstroMath.dll
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\AstroMath\obj\Debug\AstroMath.pdb

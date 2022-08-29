@@ -1,0 +1,10 @@
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\TestDLL\bin\Debug\TestDLL.exe.config
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\TestDLL\bin\Debug\TestDLL.exe
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\TestDLL\bin\Debug\TestDLL.pdb
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\TestDLL\bin\Debug\AstroMath.dll
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\TestDLL\obj\Debug\TestDLL.csproj.AssemblyReference.cache
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\TestDLL\obj\Debug\TestDLL.csproj.SuggestedBindingRedirects.cache
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\TestDLL\obj\Debug\TestDLL.csproj.CoreCompileInputs.cache
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\TestDLL\obj\Debug\TestDLL.csproj.CopyComplete
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\TestDLL\obj\Debug\TestDLL.exe
+C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\TestDLL\obj\Debug\TestDLL.pdb
