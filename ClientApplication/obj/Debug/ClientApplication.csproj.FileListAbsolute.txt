@@ -1,0 +1,11 @@
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\bin\Debug\ClientApplication.exe.config
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\bin\Debug\ClientApplication.exe
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\bin\Debug\ClientApplication.pdb
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.csproj.AssemblyReference.cache
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.DataProcessing.resources
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.Properties.Resources.resources
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.csproj.GenerateResource.cache
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.csproj.CoreCompileInputs.cache
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.exe
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.pdb
