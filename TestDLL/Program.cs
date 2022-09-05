@@ -40,7 +40,7 @@ namespace TestDLL
             Console.WriteLine("Enter Event Horizon: ");
             double eventHorizon = Convert.ToDouble(Console.ReadLine());
             Console.ReadLine();
-            result = AstroMath.FourMethods.TempInKelvin(eventHorizon);
+            result = AstroMath.FourMethods.EventHorizon(eventHorizon);
             Console.WriteLine("Event Horizon: " + result + " metres.");
             Console.ReadLine();
         }

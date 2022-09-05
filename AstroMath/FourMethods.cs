@@ -42,16 +42,8 @@ namespace AstroMath
         }
         public static double EventHorizon(double BlackholeMass)
         {
-            // Event Horizon (Schwarzschild Radius): Create a method that will return the distance from the centre of a blackhole to the event horizon. The method must have a single input parameter of type double (Blackhole Mass) and return a double which is the event horizon in metres. The formula is
-            // Gravity Constant(G) = 6.674 x 10¬¬-11 m¬¬¬¬3kg - 1s - 2
-            // Speed of Light(C) = 299792458 metres per second
-            // Mass of the Blockhole(M) = measured in kilograms(the sun is 2 x 1030 kg).
-            // Schwarzschild radius(R) in meters
-            double G = 6.674 * Math.Pow(10, -11);
-            double C = 299792458;
-            double M = BlackholeMass;
-            double R = (2 * G * M) / Math.Pow(C, 2);
-            return R;
+            // Event Horizon (Schwarzschild Radius): Create a method that will return the distance from the centre of a blackhole to the event horizon.
+            return ((2 * 6.674 * Math.Pow(10,-11)) * BlackholeMass) / (Math.Pow(299792458, 2));  
         }
 
     }

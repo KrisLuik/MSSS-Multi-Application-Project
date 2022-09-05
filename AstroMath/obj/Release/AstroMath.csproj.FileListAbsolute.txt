@@ -4,3 +4,9 @@ C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\AstroMath\obj\Release\A
 C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\AstroMath\obj\Release\AstroMath.csproj.CoreCompileInputs.cache
 C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\AstroMath\obj\Release\AstroMath.dll
 C:\Users\30045325\Desktop\MSSS-Multi-Application-Project\AstroMath\obj\Release\AstroMath.pdb
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\AstroMath\bin\Release\AstroMath.dll
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\AstroMath\bin\Release\AstroMath.pdb
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\AstroMath\obj\Release\AstroMath.csproj.AssemblyReference.cache
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\AstroMath\obj\Release\AstroMath.csproj.CoreCompileInputs.cache
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\AstroMath\obj\Release\AstroMath.dll
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\AstroMath\obj\Release\AstroMath.pdb
