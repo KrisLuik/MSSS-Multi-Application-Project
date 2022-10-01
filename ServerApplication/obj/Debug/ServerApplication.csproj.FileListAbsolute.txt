@@ -8,3 +8,13 @@ C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplicat
 C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\obj\Debug\ServerApplication.pdb
 C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\bin\Debug\AstroMath.dll
 C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\obj\Debug\ServerApplication.csproj.CopyComplete
+C:\Users\krist\Desktop\Web-Development-Assessment-One\MSSS-Multi-Application-Project\ServerApplication\bin\Debug\ServerApplication.exe.config
+C:\Users\krist\Desktop\Web-Development-Assessment-One\MSSS-Multi-Application-Project\ServerApplication\bin\Debug\ServerApplication.exe
+C:\Users\krist\Desktop\Web-Development-Assessment-One\MSSS-Multi-Application-Project\ServerApplication\bin\Debug\ServerApplication.pdb
+C:\Users\krist\Desktop\Web-Development-Assessment-One\MSSS-Multi-Application-Project\ServerApplication\bin\Debug\AstroMath.dll
+C:\Users\krist\Desktop\Web-Development-Assessment-One\MSSS-Multi-Application-Project\ServerApplication\obj\Debug\ServerApplication.csproj.AssemblyReference.cache
+C:\Users\krist\Desktop\Web-Development-Assessment-One\MSSS-Multi-Application-Project\ServerApplication\obj\Debug\ServerApplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\krist\Desktop\Web-Development-Assessment-One\MSSS-Multi-Application-Project\ServerApplication\obj\Debug\ServerApplication.csproj.CoreCompileInputs.cache
+C:\Users\krist\Desktop\Web-Development-Assessment-One\MSSS-Multi-Application-Project\ServerApplication\obj\Debug\ServerApplication.csproj.CopyComplete
+C:\Users\krist\Desktop\Web-Development-Assessment-One\MSSS-Multi-Application-Project\ServerApplication\obj\Debug\ServerApplication.exe
+C:\Users\krist\Desktop\Web-Development-Assessment-One\MSSS-Multi-Application-Project\ServerApplication\obj\Debug\ServerApplication.pdb

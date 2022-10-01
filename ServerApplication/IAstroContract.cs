@@ -17,6 +17,7 @@ namespace ServerApplication
         [OperationContract]
         // The OperationContract attribute tells WCF that ReverseString is part of this service and can 
         // be used by clients.
+        // OperationContract defines the parameters and return type of an operation.
         double StarVelocity(double observedWavelength, double restWavelength);
         double StarDistance(double arcsecondsAngle);
         double TempInKelvin(double Celcius);
