@@ -12,8 +12,11 @@ namespace ClientApplication
     {
         [OperationContract]
         double StarVelocity(double observedWavelength, double restWavelength);
+        [OperationContract]
         double StarDistance(double arcsecondsAngle);
+        [OperationContract]
         double TempInKelvin(double Celcius);
+        [OperationContract]
         double EventHorizon(double Blackholemass);
     }
 }

@@ -19,8 +19,11 @@ namespace ServerApplication
         // be used by clients.
         // OperationContract defines the parameters and return type of an operation.
         double StarVelocity(double observedWavelength, double restWavelength);
+        [OperationContract] // added
         double StarDistance(double arcsecondsAngle);
+        [OperationContract] // added
         double TempInKelvin(double Celcius);
+        [OperationContract] // added
         double EventHorizon(double Blackholemass);
     }
 }

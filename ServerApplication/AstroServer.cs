@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using AstroMath;
@@ -10,8 +11,11 @@ using AstroMath;
 
 namespace ServerApplication
 {
+    // Implementation of the interface on the server side.
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)] // added
     internal class AstroServer : IAstroContract
     {
+       // FourMethods getFourMethods = new FourMethods();// added
         public double StarVelocity(double observedWavelength, double restWavelength)
         {
             return AstroMath.FourMethods.StarVelocity(observedWavelength, restWavelength);
