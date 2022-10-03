@@ -117,10 +117,844 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 548</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="textboxStarVelocityReadOnly.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelEventHorizon.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="eventHorizonColumn.Text" xml:space="preserve">
+    <value>Event Horizon</value>
+  </data>
+  <data name="&gt;&gt;frenchToolStripMenuItem.Name" xml:space="preserve">
+    <value>frenchToolStripMenuItem</value>
+  </data>
+  <data name="lightModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Light Mode</value>
+  </data>
+  <data name="&gt;&gt;observedWavelengthTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelTempInKelvin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizonReadOnly.Name" xml:space="preserve">
+    <value>textboxEventHorizonReadOnly</value>
+  </data>
+  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
+    <value>German</value>
+  </data>
+  <data name="temperatureColumn.Width" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizonReadOnly1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizonReadOnlyPower.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="labelStarVelocity.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;calculateButton.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textboxStarDistance.Name" xml:space="preserve">
+    <value>textboxStarDistance</value>
+  </data>
+  <data name="&gt;&gt;textboxTemperatureReadOnly.Name" xml:space="preserve">
+    <value>textboxTemperatureReadOnly</value>
+  </data>
+  <data name="&gt;&gt;listViewItems.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="eventHorizonColumn.Width" type="System.Int32, mscorlib">
+    <value>173</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelStarVelocity.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="restWavelengthTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 40</value>
+  </data>
+  <data name="calculateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 197</value>
+  </data>
+  <data name="labelEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 154</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;temperatureColumn.Name" xml:space="preserve">
+    <value>temperatureColumn</value>
+  </data>
+  <data name="numericUpDown1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="calculateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 28</value>
+  </data>
+  <data name="labelStarDistance.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="listViewItems.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;textboxStarDistance.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelTempInKelvin.Text" xml:space="preserve">
+    <value>Temperature</value>
+  </data>
+  <data name="numericUpDown1.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;starVelocityColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lightModeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="calculateButton.Text" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="textboxStarDistance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 72</value>
+  </data>
+  <data name="labelTempInKelvin.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="calculateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;textboxEvenHorizonPower.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="textboxEventHorizonReadOnly1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 154</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="addButton.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="textboxEventHorizonReadOnly.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;labelStarVelocity.Name" xml:space="preserve">
+    <value>labelStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;observedWavelengthTextbox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="&gt;&gt;starDistanceColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="&gt;&gt;observedWavelengthTextbox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DataProcessing</value>
+  </data>
+  <data name="addButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;eventHorizonColumn.Name" xml:space="preserve">
+    <value>eventHorizonColumn</value>
+  </data>
+  <data name="&gt;&gt;textboxStarDistanceReadOnly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textboxEventHorizonReadOnlyPower.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;textboxTemperatureReadOnly.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelStarDistance.Text" xml:space="preserve">
+    <value>Star Distance</value>
+  </data>
+  <data name="&gt;&gt;textboxStarDistanceReadOnly.Name" xml:space="preserve">
+    <value>textboxStarDistanceReadOnly</value>
+  </data>
+  <data name="&gt;&gt;restWavelengthTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="temperatureColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="textboxStarDistance.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="textboxStarDistanceReadOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 23</value>
+  </data>
+  <data name="&gt;&gt;labelEventHorizon.Name" xml:space="preserve">
+    <value>labelEventHorizon</value>
+  </data>
+  <data name="observedWavelengthTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 40</value>
+  </data>
+  <data name="labelStarDistance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 76</value>
+  </data>
+  <data name="&gt;&gt;labelStarDistance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textboxTemperature.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;addButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelStarVelocity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 40</value>
+  </data>
+  <data name="&gt;&gt;themeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textboxStarVelocityReadOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 23</value>
+  </data>
+  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="germanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="&gt;&gt;listViewItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textboxStarVelocityReadOnly.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="listView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="labelEventHorizon.Text" xml:space="preserve">
+    <value>Event Horizon</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
+    <value>listView1</value>
+  </data>
+  <data name="groupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;labelStarVelocity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="themeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="&gt;&gt;textboxStarDistance.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 47</value>
+  </data>
+  <data name="labelStarDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="&gt;&gt;germanToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 2, 0, 2</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Input Values</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizonReadOnly.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
+    <value>englishToolStripMenuItem</value>
+  </data>
+  <data name="labelStarVelocity.Text" xml:space="preserve">
+    <value>Star Velocity</value>
+  </data>
+  <data name="&gt;&gt;textboxStarDistanceReadOnly.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textboxStarVelocityReadOnly.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelEventHorizon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="starDistanceColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Data Processing</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizonReadOnlyPower.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelStarDistance.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelStarDistance.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown1.Name" xml:space="preserve">
+    <value>numericUpDown1</value>
+  </data>
+  <data name="&gt;&gt;frenchToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lightModeToolStripMenuItem.Name" xml:space="preserve">
+    <value>lightModeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;labelTempInKelvin.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textboxStarVelocity.Name" xml:space="preserve">
+    <value>textboxStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="starDistanceColumn.Text" xml:space="preserve">
+    <value>Star Distance</value>
+  </data>
+  <data name="textboxEventHorizonReadOnly1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 23</value>
+  </data>
+  <data name="textboxEventHorizon.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizonReadOnlyPower.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="textboxTemperature.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 110</value>
+  </data>
+  <data name="&gt;&gt;starVelocityColumn.Name" xml:space="preserve">
+    <value>starVelocityColumn</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 40</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizonReadOnlyPower.Name" xml:space="preserve">
+    <value>textboxEventHorizonReadOnlyPower</value>
+  </data>
+  <data name="starVelocityColumn.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;eventHorizonColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textboxTemperatureReadOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 106</value>
+  </data>
+  <data name="textboxStarVelocityReadOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 40</value>
+  </data>
+  <data name="deleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 28</value>
+  </data>
+  <data name="&gt;&gt;nightModeToolStripMenuItem.Name" xml:space="preserve">
+    <value>nightModeToolStripMenuItem</value>
+  </data>
+  <data name="addButton.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="textboxStarVelocity.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;textboxTemperatureReadOnly.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="temperatureColumn.Text" xml:space="preserve">
+    <value>Temperature in °C</value>
+  </data>
+  <data name="textboxStarVelocity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="eventHorizonColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textboxEventHorizonReadOnlyPower.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 23</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;calculateButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="nightModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Night Mode</value>
+  </data>
+  <data name="&gt;&gt;textboxStarVelocity.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>476, 197</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;restWavelengthTextbox.Name" xml:space="preserve">
+    <value>restWavelengthTextbox</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizonReadOnly1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="nightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="&gt;&gt;textboxStarVelocityReadOnly.Name" xml:space="preserve">
+    <value>textboxStarVelocityReadOnly</value>
+  </data>
+  <data name="&gt;&gt;textboxStarVelocity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelEventHorizon.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="&gt;&gt;labelStarDistance.Name" xml:space="preserve">
+    <value>labelStarDistance</value>
+  </data>
+  <data name="&gt;&gt;textboxStarVelocity.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="listView1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;restWavelengthTextbox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="calculateButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;nightModeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;germanToolStripMenuItem.Name" xml:space="preserve">
+    <value>germanToolStripMenuItem</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;labelTempInKelvin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;temperatureColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelTempInKelvin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="textboxEventHorizonReadOnlyPower.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 131</value>
+  </data>
+  <data name="&gt;&gt;labelStarDistance.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 240</value>
+  </data>
+  <data name="themeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="deleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 345</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizonReadOnly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textboxTemperatureReadOnly.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;observedWavelengthTextbox.Name" xml:space="preserve">
+    <value>observedWavelengthTextbox</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;listView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelEventHorizon.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="deleteButton.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="textboxStarDistanceReadOnly.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizonReadOnly1.Name" xml:space="preserve">
+    <value>textboxEventHorizonReadOnly1</value>
+  </data>
+  <data name="&gt;&gt;labelStarVelocity.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;textboxEvenHorizonPower.Name" xml:space="preserve">
+    <value>textboxEvenHorizonPower</value>
+  </data>
+  <data name="labelStarVelocity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="labelTempInKelvin.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textboxStarDistanceReadOnly.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="listViewItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 313</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 240</value>
+  </data>
+  <data name="starDistanceColumn.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="&gt;&gt;addButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelStarVelocity.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textboxTemperature.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>Choose Language</value>
+  </data>
+  <data name="textboxTemperature.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textboxEvenHorizonPower.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="textboxEvenHorizonPower.Text" xml:space="preserve">
+    <value>x10</value>
+  </data>
+  <data name="textboxEventHorizonReadOnly1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="languageToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 9pt</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 47</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizon.Name" xml:space="preserve">
+    <value>textboxEventHorizon</value>
+  </data>
+  <data name="&gt;&gt;textboxTemperature.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="deleteButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;restWavelengthTextbox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="groupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="addButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 28</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="addButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="textboxEvenHorizonPower.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 154</value>
+  </data>
+  <data name="textboxStarDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="numericUpDown1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 23</value>
+  </data>
+  <data name="&gt;&gt;textboxTemperature.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="observedWavelengthTextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;labelEventHorizon.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.Name" xml:space="preserve">
+    <value>deleteButton</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 24</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="deleteButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;labelStarVelocity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textboxStarDistanceReadOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 72</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="addButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 313</value>
+  </data>
+  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 313</value>
+  </data>
+  <data name="deleteButton.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="&gt;&gt;listViewItems.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="&gt;&gt;listViewItems.Name" xml:space="preserve">
+    <value>listViewItems</value>
+  </data>
+  <data name="restWavelengthTextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;textboxEvenHorizonPower.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
+    <value>languageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;textboxEvenHorizonPower.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textboxTemperature.Name" xml:space="preserve">
+    <value>textboxTemperature</value>
+  </data>
+  <data name="&gt;&gt;themeToolStripMenuItem.Name" xml:space="preserve">
+    <value>themeToolStripMenuItem</value>
+  </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;textboxStarVelocityReadOnly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textboxTemperatureReadOnly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="starVelocityColumn.Text" xml:space="preserve">
+    <value>Star Velocity</value>
+  </data>
+  <data name="textboxEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="&gt;&gt;labelTempInKelvin.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;textboxStarDistance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textboxEvenHorizonPower.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 23</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Calculation Results</value>
+  </data>
+  <data name="&gt;&gt;labelTempInKelvin.Name" xml:space="preserve">
+    <value>labelTempInKelvin</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="&gt;&gt;labelEventHorizon.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelStarDistance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="textboxEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 154</value>
+  </data>
+  <data name="&gt;&gt;addButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="textboxEventHorizonReadOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 161</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizonReadOnly1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;calculateButton.Name" xml:space="preserve">
+    <value>calculateButton</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizon.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizonReadOnly.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;starDistanceColumn.Name" xml:space="preserve">
+    <value>starDistanceColumn</value>
+  </data>
+  <data name="themeToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 9pt</value>
+  </data>
+  <data name="textboxTemperatureReadOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 23</value>
+  </data>
+  <data name="textboxStarVelocity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 40</value>
+  </data>
+  <data name="numericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 131</value>
+  </data>
+  <data name="calculateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;addButton.Name" xml:space="preserve">
+    <value>addButton</value>
+  </data>
+  <data name="&gt;&gt;calculateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelTempInKelvin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 115</value>
+  </data>
+  <data name="menuStrip1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textboxEventHorizon.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>

@@ -9,3 +9,12 @@ C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplicat
 C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.csproj.CoreCompileInputs.cache
 C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.exe
 C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.pdb
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\bin\Debug\de\ClientApplication.resources.dll
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\bin\Debug\en\ClientApplication.resources.dll
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\bin\Debug\fr\ClientApplication.resources.dll
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.DataProcessing.de.resources
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.DataProcessing.en.resources
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\ClientApplication.DataProcessing.fr.resources
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\de\ClientApplication.resources.dll
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\en\ClientApplication.resources.dll
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ClientApplication\obj\Debug\fr\ClientApplication.resources.dll

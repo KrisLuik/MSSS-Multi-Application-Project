@@ -1,8 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Pipes;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Runtime.CompilerServices;
 using System.ServiceModel;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 // Create a ServiceHost and NetNamedPipeBinding in the “Program.cs” file to provide connection for the client(s).
@@ -14,14 +19,14 @@ namespace ServerApplication
     {
         static void Main(string[] args)
         {
-            using (ServiceHost host = new ServiceHost(typeof(AstroServer), new Uri[] { new Uri("net.pipe://localhost") }))
-            {
-                host.AddServiceEndpoint(typeof(IAstroContract), new NetNamedPipeBinding(), "PipeReverse");
-                host.Open();
-                Console.WriteLine("Service is available. " + "Press <ENTER> to exit. ");
-                Console.ReadLine(); 
-                host.Close();
-            }
+            string address = "net.pipe://localhost/AstroServer";
+            ServiceHost serviceHost = new ServiceHost(typeof(AstroServer));
+            NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
+            serviceHost.AddServiceEndpoint(typeof(IAstroContract), binding, address);
+            serviceHost.Open();
+            Console.WriteLine("ServiceHost is running. Press <<Return>> to Exit");
+            Console.ReadLine();
+            serviceHost.Close();
         }
     }
 }

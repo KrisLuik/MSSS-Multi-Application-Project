@@ -54,8 +54,18 @@
       <DependentUpon>DataProcessing.cs</DependentUpon>
     </Compile>
     <Compile Include="IAstroContract.cs" />
+    <Compile Include="Information.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DataProcessing.de.resx">
+      <DependentUpon>DataProcessing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcessing.en.resx">
+      <DependentUpon>DataProcessing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProcessing.fr.resx">
+      <DependentUpon>DataProcessing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataProcessing.resx">
       <DependentUpon>DataProcessing.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +90,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

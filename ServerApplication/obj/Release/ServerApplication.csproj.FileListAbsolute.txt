@@ -1,0 +1,10 @@
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\bin\Release\ServerApplication.exe.config
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\bin\Release\ServerApplication.exe
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\bin\Release\ServerApplication.pdb
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\bin\Release\AstroMath.dll
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\obj\Release\ServerApplication.csproj.AssemblyReference.cache
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\obj\Release\ServerApplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\obj\Release\ServerApplication.csproj.CoreCompileInputs.cache
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\obj\Release\ServerApplication.csproj.CopyComplete
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\obj\Release\ServerApplication.exe
+C:\Users\30045325\Documents\GitHub\MSSS-Multi-Application-Project\ServerApplication\obj\Release\ServerApplication.pdb

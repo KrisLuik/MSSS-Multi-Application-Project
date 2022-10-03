@@ -8,7 +8,7 @@ using System.ServiceModel;
 namespace ClientApplication
 {
     [ServiceContract]
-    internal interface IAstroContract
+    public interface IAstroContract
     {
         [OperationContract]
         double StarVelocity(double observedWavelength, double restWavelength);

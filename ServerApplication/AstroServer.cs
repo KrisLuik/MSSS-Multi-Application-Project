@@ -12,10 +12,12 @@ using AstroMath;
 namespace ServerApplication
 {
     // Implementation of the interface on the server side.
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)] // added
-    internal class AstroServer : IAstroContract
+    // Instance context mode parameter specifies the life time of service object.
+    // InstanceContextMode.Single sets one instance of service for all calls.
+    // [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
+    public class AstroServer : IAstroContract
     {
-       // FourMethods getFourMethods = new FourMethods();// added
+        // FourMethods getMethods = new FourMethods();
         public double StarVelocity(double observedWavelength, double restWavelength)
         {
             return AstroMath.FourMethods.StarVelocity(observedWavelength, restWavelength);
