@@ -24,20 +24,20 @@ namespace ClientApplication
         #region Add button
         private void addButton_Click(object sender, EventArgs e)
         {
-           // ClearStatusMessage();
-           // if (!string.IsNullOrWhiteSpace(textboxStarVelocityReadOnly.Text) &&
-           //    !string.IsNullOrWhiteSpace(textboxStarDistance.Text))
-           // {
-                Information info = new Information();
-                info.SetStarVelocity(textboxStarVelocityReadOnly.Text);
-                info.SetStarDistance(textboxStarDistanceReadOnly.Text);
-                info.SetTempInKelvin(textboxTemperatureReadOnly.Text);
-                info.SetEventHorizon(textboxEventHorizonReadOnly.Text);
-                astroCalculationsList.Add(info);
-                astroCalculationsList.Sort();
-                Display();
-                // ClearAllTextBoxes();
-                // toolStripStatusLabel.Text = "Calculations added.";
+            // ClearStatusMessage();
+            // if (!string.IsNullOrWhiteSpace(textboxStarVelocityReadOnly.Text) &&
+            //    !string.IsNullOrWhiteSpace(textboxStarDistance.Text))
+            // {
+            Information info = new Information();
+            info.SetStarVelocity(textboxStarVelocityReadOnly.Text);
+            info.SetStarDistance(textboxStarDistanceReadOnly.Text);
+            info.SetTempInKelvin(textboxTemperatureReadOnly.Text);
+            info.SetEventHorizon(textboxEventHorizonReadOnly.Text);
+            astroCalculationsList.Add(info);
+            astroCalculationsList.Sort();
+            Display();
+            // ClearAllTextBoxes();
+            // toolStripStatusLabel.Text = "Calculations added.";
             //}
         }
         #endregion
@@ -50,7 +50,7 @@ namespace ClientApplication
             {
                 listViewItems.Items.Add(info.DisplayCalculations());
             }
-           // toolStripStatusLabel.Text = "Data items displayed.";
+            // toolStripStatusLabel.Text = "Data items displayed.";
         }
         #endregion
         #region Highlight data from listview
@@ -67,7 +67,7 @@ namespace ClientApplication
         #region Delete button
         private void deleteButton_Click(object sender, EventArgs e)
         {
-           // ClearStatusMessage();
+            // ClearStatusMessage();
             try
             {
                 int currentItem = listViewItems.SelectedIndices[0];
@@ -96,7 +96,7 @@ namespace ClientApplication
             catch (ArgumentOutOfRangeException)
             {
                 // Trace.WriteLine("Error! Not a valid action!");
-               // toolStripStatusLabel.Text = "Error: Not a valid action.";
+                // toolStripStatusLabel.Text = "Error: Not a valid action.";
             }
         }
         #endregion
@@ -108,13 +108,40 @@ namespace ClientApplication
             EndpointAddress ep = new EndpointAddress(address);
             IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
 
+            double observedeWavelength = double.Parse(observedWavelengthTextbox.Text);
+            double restWavelength = double.Parse(restWavelengthTextbox.Text);
+
+            double starDistanceData = double.Parse(textboxStarDistance.Text);
             double tempCelcius = double.Parse(textboxTemperature.Text);
-            if (!string.IsNullOrWhiteSpace(textboxTemperature.Text))
+
+            double eventHorizonData = double.Parse(textboxEventHorizon.Text);
+            double powerOfEventHorizon = double.Parse(eventHorizonPower.Value.ToString());
+            double eventResult = eventHorizonData * powerOfEventHorizon;
+
+            if (!string.IsNullOrWhiteSpace(observedWavelengthTextbox.Text) &&
+                !string.IsNullOrWhiteSpace(restWavelengthTextbox.Text))
             {
-               var result = channel.TempInKelvin(tempCelcius);
-               textboxTemperatureReadOnly.Text = result.ToString(); 
+                var starVelocityCalculation = channel.StarVelocity(observedeWavelength, restWavelength);
+                var resultSV = textboxStarVelocityReadOnly.Text;
             }
+            else if (!string.IsNullOrWhiteSpace(textboxStarDistance.Text))
+            {
+                var starDistanceCalculation = channel.StarDistance(starDistanceData);
+                var resultStarDistance = textboxStarDistanceReadOnly.Text;
+            }
+            else if (!string.IsNullOrWhiteSpace(textboxTemperature.Text))
+            {
+                var result = channel.TempInKelvin(tempCelcius);
+                textboxTemperatureReadOnly.Text = result.ToString();
+
+            }
+            else if (!string.IsNullOrWhiteSpace(textboxEventHorizon.Text) && powerOfEventHorizon > 0)
+            {
+                var eventHorizonResult = channel.EventHorizon(eventResult);
+                textboxEventHorizon.Text = eventHorizonResult.ToString();   
+
+            }
+            #endregion
         }
-        #endregion
     }
 }

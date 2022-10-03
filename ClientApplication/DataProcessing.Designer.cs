@@ -51,7 +51,7 @@
             this.observedWavelengthTextbox = new System.Windows.Forms.TextBox();
             this.calculateButton = new System.Windows.Forms.Button();
             this.restWavelengthTextbox = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.eventHorizonPower = new System.Windows.Forms.NumericUpDown();
             this.textboxEvenHorizonPower = new System.Windows.Forms.TextBox();
             this.listViewItems = new System.Windows.Forms.ListView();
             this.starVelocityColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -63,7 +63,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventHorizonPower)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -195,10 +195,10 @@
             resources.ApplyResources(this.restWavelengthTextbox, "restWavelengthTextbox");
             this.restWavelengthTextbox.Name = "restWavelengthTextbox";
             // 
-            // numericUpDown1
+            // eventHorizonPower
             // 
-            resources.ApplyResources(this.numericUpDown1, "numericUpDown1");
-            this.numericUpDown1.Name = "numericUpDown1";
+            resources.ApplyResources(this.eventHorizonPower, "eventHorizonPower");
+            this.eventHorizonPower.Name = "eventHorizonPower";
             // 
             // textboxEvenHorizonPower
             // 
@@ -259,7 +259,7 @@
             this.groupBox1.Controls.Add(this.textboxEventHorizon);
             this.groupBox1.Controls.Add(this.labelEventHorizon);
             this.groupBox1.Controls.Add(this.labelTempInKelvin);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.eventHorizonPower);
             this.groupBox1.Controls.Add(this.textboxTemperature);
             this.groupBox1.Controls.Add(this.textboxEvenHorizonPower);
             this.groupBox1.Controls.Add(this.restWavelengthTextbox);
@@ -295,7 +295,7 @@
             this.Name = "DataProcessing";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventHorizonPower)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -329,7 +329,7 @@
         private System.Windows.Forms.TextBox observedWavelengthTextbox;
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.TextBox restWavelengthTextbox;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown eventHorizonPower;
         private System.Windows.Forms.TextBox textboxEvenHorizonPower;
         private System.Windows.Forms.ListView listViewItems;
         private System.Windows.Forms.Button addButton;

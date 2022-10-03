@@ -22,18 +22,6 @@ namespace ClientApplication
             NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
             EndpointAddress ep = new EndpointAddress(address);
             IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
-
-            //ChannelFactory<IAstroContract> pipeFactory = new ChannelFactory<IAstroContract>(new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
-           // IAstroContract pipeProxy = pipeFactory.CreateChannel();
-
-            //---------------------------------------
-            //while (true)
-            //{
-            //    string str = Console.ReadLine();
-            //    double convertFromString = Convert.ToDouble(str);
-            //    Console.WriteLine("pipe: " + pipeProxy.StarDistance(convertFromString), pipeProxy.TempInKelvin(convertFromString),
-            //        pipeProxy.StarVelocity(convertFromString, convertFromString), pipeProxy.EventHorizon(convertFromString));
-            //}
         }
     }
 }
