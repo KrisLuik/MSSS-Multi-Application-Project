@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO.Pipes;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace ClientApplication
 {
@@ -45,10 +47,14 @@ namespace ClientApplication
         private void Display()
         {
             listViewItems.Items.Clear();
-            listViewItems.Sort();
             foreach (var info in astroCalculationsList)
             {
-                listViewItems.Items.Add(info.DisplayCalculations());
+                ListViewItem lvi = new ListViewItem();
+                lvi.SubItems.Add(info.GetStarVelocity());
+                lvi.SubItems.Add(info.GetStarDistance());
+                lvi.SubItems.Add(info.GetTempInKelvin());
+                lvi.SubItems.Add(info.GetEventHorizon());
+                listViewItems.Items.Add(lvi);
             }
             // toolStripStatusLabel.Text = "Data items displayed.";
         }
@@ -142,6 +148,31 @@ namespace ClientApplication
 
             }
             #endregion
+
         }
+        #region Language setting
+        private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("fr");
+            Controls.Clear();
+            InitializeComponent();
+            Display();
+
+        }
+        private void germanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("de");
+            Controls.Clear();
+            InitializeComponent();
+            Display();
+        }
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("en");
+            Controls.Clear();
+            InitializeComponent();
+            Display();
+        }
+        #endregion
     }
 }

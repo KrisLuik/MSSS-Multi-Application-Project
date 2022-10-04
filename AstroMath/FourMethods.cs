@@ -43,7 +43,7 @@ namespace AstroMath
         public static double EventHorizon(double BlackholeMass)
         {
             // Event Horizon (Schwarzschild Radius): Create a method that will return the distance from the centre of a blackhole to the event horizon.
-            return ((2 * 6.674 * Math.Pow(10,-11)) * BlackholeMass) / (Math.Pow(299792458, 2));  
+            return ((2 * (6.674 * Math.Pow(10,-11))) * BlackholeMass) / (Math.Pow(299792458, 2));  
         }
 
     }

@@ -60,9 +60,6 @@
     <EmbeddedResource Include="DataProcessing.de.resx">
       <DependentUpon>DataProcessing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DataProcessing.en.resx">
-      <DependentUpon>DataProcessing.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DataProcessing.fr.resx">
       <DependentUpon>DataProcessing.cs</DependentUpon>
     </EmbeddedResource>

@@ -119,46 +119,28 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelStarVelocity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 13</value>
+    <value>120, 15</value>
   </data>
   <data name="labelStarVelocity.Text" xml:space="preserve">
     <value>Sterngeschwindigkeit</value>
   </data>
   <data name="labelStarDistance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 13</value>
+    <value>106, 15</value>
   </data>
   <data name="labelStarDistance.Text" xml:space="preserve">
     <value>Sternenentfernung</value>
   </data>
   <data name="labelTempInKelvin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
+    <value>67, 15</value>
   </data>
   <data name="labelTempInKelvin.Text" xml:space="preserve">
     <value>Temperatur</value>
   </data>
-  <data name="labelEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 168</value>
-  </data>
   <data name="labelEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 13</value>
+    <value>92, 15</value>
   </data>
   <data name="labelEventHorizon.Text" xml:space="preserve">
     <value>Ereignishorizont</value>
-  </data>
-  <data name="textboxStarVelocityReadOnly.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 35</value>
-  </data>
-  <data name="textboxTemperatureReadOnly.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 110</value>
-  </data>
-  <data name="textboxEventHorizonReadOnly1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 163</value>
-  </data>
-  <data name="textboxEventHorizonReadOnlyPower.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 139</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>665, 24</value>
   </data>
   <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 20</value>
@@ -176,7 +158,7 @@
     <value>180, 22</value>
   </data>
   <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
-    <value>Französisch</value>
+    <value>Französisch </value>
   </data>
   <data name="germanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
@@ -199,96 +181,31 @@
   <data name="lightModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Tagesmodus</value>
   </data>
-  <data name="textboxEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 163</value>
-  </data>
-  <data name="textboxTemperature.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 110</value>
-  </data>
-  <data name="textboxStarDistance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 72</value>
-  </data>
-  <data name="textboxStarVelocity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 35</value>
-  </data>
   <data name="calculateButton.Text" xml:space="preserve">
     <value>Berechnung</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>217, 35</value>
-  </data>
-  <data name="numericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 140</value>
-  </data>
-  <data name="textboxEvenHorizonPower.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 140</value>
-  </data>
-  <data name="textboxEvenHorizonPower.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 23</value>
-  </data>
-  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 313</value>
-  </data>
-  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>518, 197</value>
-  </data>
-  <data name="starVelocityColumn.Text" xml:space="preserve">
+  <data name="columnStarVelocity.Text" xml:space="preserve">
     <value>Sterngeschwindigkeit</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="starVelocityColumn.Width" type="System.Int32, mscorlib">
-    <value>126</value>
-  </data>
-  <data name="starDistanceColumn.Text" xml:space="preserve">
+  <data name="columnStarDistance.Text" xml:space="preserve">
     <value>Sternenentfernung</value>
   </data>
-  <data name="starDistanceColumn.Width" type="System.Int32, mscorlib">
-    <value>135</value>
+  <data name="columnTemperature.Text" xml:space="preserve">
+    <value>Temperatur</value>
   </data>
-  <data name="temperatureColumn.Text" xml:space="preserve">
-    <value>Temperatur in °C</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="temperatureColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="temperatureColumn.Width" type="System.Int32, mscorlib">
-    <value>133</value>
-  </data>
-  <data name="eventHorizonColumn.Text" xml:space="preserve">
+  <data name="columnEventHorizon.Text" xml:space="preserve">
     <value>Ereignishorizont</value>
-  </data>
-  <data name="eventHorizonColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="eventHorizonColumn.Width" type="System.Int32, mscorlib">
-    <value>120</value>
   </data>
   <data name="addButton.Text" xml:space="preserve">
     <value>Hinzufügen</value>
   </data>
-  <data name="deleteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 345</value>
-  </data>
   <data name="deleteButton.Text" xml:space="preserve">
     <value>Löschen</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>324, 240</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Eingabewerte</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 47</value>
-  </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Berechnungsergebnisse</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>665, 548</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Datenverarbeitung</value>
   </data>
 </root>

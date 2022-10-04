@@ -119,55 +119,52 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelStarVelocity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 40</value>
+    <value>5, 27</value>
   </data>
   <data name="labelStarVelocity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 13</value>
+    <value>101, 15</value>
   </data>
   <data name="labelStarVelocity.Text" xml:space="preserve">
     <value>Vitesse des étoiles</value>
   </data>
   <data name="labelStarDistance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 76</value>
+    <value>5, 71</value>
   </data>
   <data name="labelStarDistance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 13</value>
+    <value>84, 15</value>
   </data>
   <data name="labelStarDistance.Text" xml:space="preserve">
     <value>Distance étoile</value>
   </data>
   <data name="labelTempInKelvin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 110</value>
+    <value>5, 115</value>
   </data>
   <data name="labelTempInKelvin.Text" xml:space="preserve">
     <value>Température</value>
   </data>
   <data name="labelEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 164</value>
+    <value>5, 159</value>
   </data>
   <data name="labelEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 13</value>
+    <value>137, 15</value>
   </data>
   <data name="labelEventHorizon.Text" xml:space="preserve">
     <value>Horizon des événements</value>
   </data>
   <data name="textboxStarVelocityReadOnly.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 35</value>
+    <value>15, 45</value>
   </data>
   <data name="textboxStarDistanceReadOnly.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 71</value>
+    <value>15, 89</value>
   </data>
   <data name="textboxTemperatureReadOnly.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 105</value>
+    <value>15, 133</value>
   </data>
-  <data name="textboxEventHorizonReadOnly1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 159</value>
-  </data>
-  <data name="textboxEventHorizonReadOnlyPower.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 136</value>
+  <data name="textboxEventHorizonReadOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 179</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>671, 24</value>
+    <value>608, 24</value>
   </data>
   <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 20</value>
@@ -209,94 +206,82 @@
     <value>Mode Jour</value>
   </data>
   <data name="textboxEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 159</value>
-  </data>
-  <data name="textboxEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 23</value>
+    <value>6, 179</value>
   </data>
   <data name="textboxTemperature.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 105</value>
+    <value>8, 133</value>
   </data>
   <data name="textboxTemperature.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 23</value>
+    <value>126, 23</value>
   </data>
   <data name="textboxStarDistance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 71</value>
+    <value>8, 89</value>
   </data>
   <data name="textboxStarDistance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 23</value>
+    <value>126, 23</value>
   </data>
-  <data name="textboxStarVelocity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 35</value>
+  <data name="observedWavelengthTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 45</value>
   </data>
-  <data name="textboxStarVelocity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 23</value>
+  <data name="calculateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 212</value>
   </data>
   <data name="calculateButton.Text" xml:space="preserve">
     <value>Calculer</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 35</value>
+  <data name="restWavelengthTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 45</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 23</value>
+  <data name="eventHorizonPower.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 173</value>
   </data>
-  <data name="numericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>241, 137</value>
-  </data>
-  <data name="textboxEvenHorizonPower.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 137</value>
-  </data>
-  <data name="textboxEvenHorizonPower.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 23</value>
-  </data>
-  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>522, 197</value>
-  </data>
-  <data name="starVelocityColumn.Text" xml:space="preserve">
+  <data name="columnStarVelocity.Text" xml:space="preserve">
     <value>Vitesse des étoiles</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="starVelocityColumn.Width" type="System.Int32, mscorlib">
-    <value>114</value>
-  </data>
-  <data name="starDistanceColumn.Text" xml:space="preserve">
+  <data name="columnStarDistance.Text" xml:space="preserve">
     <value>Distance étoile</value>
   </data>
-  <data name="temperatureColumn.Text" xml:space="preserve">
-    <value>Température en °C</value>
+  <data name="columnTemperature.Text" xml:space="preserve">
+    <value>Température</value>
   </data>
-  <data name="eventHorizonColumn.Text" xml:space="preserve">
+  <data name="columnEventHorizon.Text" xml:space="preserve">
     <value>Horizon des événements</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="columnEventHorizon.Width" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="addButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 212</value>
   </data>
   <data name="addButton.Text" xml:space="preserve">
     <value>Ajouter</value>
   </data>
+  <data name="deleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 212</value>
+  </data>
   <data name="deleteButton.Text" xml:space="preserve">
     <value>Effacer</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 47</value>
-  </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 240</value>
+    <value>273, 251</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Valeurs D'entrée</value>
+    <value>Valeurs d'entrée</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 47</value>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 179</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 240</value>
+    <value>273, 251</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Résultats du calcul</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>671, 548</value>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>608, 22</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Traitement De L'information</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>608, 548</value>
   </data>
 </root>

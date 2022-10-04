@@ -52,16 +52,18 @@
             this.calculateButton = new System.Windows.Forms.Button();
             this.restWavelengthTextbox = new System.Windows.Forms.TextBox();
             this.eventHorizonPower = new System.Windows.Forms.NumericUpDown();
-            this.textboxEvenHorizonPower = new System.Windows.Forms.TextBox();
             this.listViewItems = new System.Windows.Forms.ListView();
-            this.starVelocityColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.starDistanceColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.temperatureColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.eventHorizonColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnStarVelocity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnStarDistance = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnTemperature = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnEventHorizon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.addButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventHorizonPower)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -134,16 +136,19 @@
             // 
             resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // frenchToolStripMenuItem
             // 
             resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
+            this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
             // 
             // germanToolStripMenuItem
             // 
             resources.ApplyResources(this.germanToolStripMenuItem, "germanToolStripMenuItem");
             this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
+            this.germanToolStripMenuItem.Click += new System.EventHandler(this.germanToolStripMenuItem_Click);
             // 
             // themeToolStripMenuItem
             // 
@@ -200,43 +205,43 @@
             resources.ApplyResources(this.eventHorizonPower, "eventHorizonPower");
             this.eventHorizonPower.Name = "eventHorizonPower";
             // 
-            // textboxEvenHorizonPower
-            // 
-            resources.ApplyResources(this.textboxEvenHorizonPower, "textboxEvenHorizonPower");
-            this.textboxEvenHorizonPower.Name = "textboxEvenHorizonPower";
-            this.textboxEvenHorizonPower.ReadOnly = true;
-            // 
             // listViewItems
             // 
             resources.ApplyResources(this.listViewItems, "listViewItems");
             this.listViewItems.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.starVelocityColumn,
-            this.starDistanceColumn,
-            this.temperatureColumn,
-            this.eventHorizonColumn});
+            this.columnHeader2,
+            this.columnStarVelocity,
+            this.columnStarDistance,
+            this.columnTemperature,
+            this.columnEventHorizon});
             this.listViewItems.FullRowSelect = true;
             this.listViewItems.GridLines = true;
             this.listViewItems.HideSelection = false;
             this.listViewItems.Name = "listViewItems";
+            this.listViewItems.Scrollable = false;
             this.listViewItems.UseCompatibleStateImageBehavior = false;
             this.listViewItems.View = System.Windows.Forms.View.Details;
             this.listViewItems.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listViewItems_MouseClick);
             // 
-            // starVelocityColumn
+            // columnHeader2
             // 
-            resources.ApplyResources(this.starVelocityColumn, "starVelocityColumn");
+            resources.ApplyResources(this.columnHeader2, "columnHeader2");
             // 
-            // starDistanceColumn
+            // columnStarVelocity
             // 
-            resources.ApplyResources(this.starDistanceColumn, "starDistanceColumn");
+            resources.ApplyResources(this.columnStarVelocity, "columnStarVelocity");
             // 
-            // temperatureColumn
+            // columnStarDistance
             // 
-            resources.ApplyResources(this.temperatureColumn, "temperatureColumn");
+            resources.ApplyResources(this.columnStarDistance, "columnStarDistance");
             // 
-            // eventHorizonColumn
+            // columnTemperature
             // 
-            resources.ApplyResources(this.eventHorizonColumn, "eventHorizonColumn");
+            resources.ApplyResources(this.columnTemperature, "columnTemperature");
+            // 
+            // columnEventHorizon
+            // 
+            resources.ApplyResources(this.columnEventHorizon, "columnEventHorizon");
             // 
             // addButton
             // 
@@ -255,13 +260,14 @@
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.labelStarVelocity);
             this.groupBox1.Controls.Add(this.textboxEventHorizon);
             this.groupBox1.Controls.Add(this.labelEventHorizon);
             this.groupBox1.Controls.Add(this.labelTempInKelvin);
             this.groupBox1.Controls.Add(this.eventHorizonPower);
             this.groupBox1.Controls.Add(this.textboxTemperature);
-            this.groupBox1.Controls.Add(this.textboxEvenHorizonPower);
             this.groupBox1.Controls.Add(this.restWavelengthTextbox);
             this.groupBox1.Controls.Add(this.textboxStarDistance);
             this.groupBox1.Controls.Add(this.calculateButton);
@@ -270,6 +276,12 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            // 
             // groupBox2
             // 
             resources.ApplyResources(this.groupBox2, "groupBox2");
@@ -277,18 +289,24 @@
             this.groupBox2.Controls.Add(this.textboxStarVelocityReadOnly);
             this.groupBox2.Controls.Add(this.textboxStarDistanceReadOnly);
             this.groupBox2.Controls.Add(this.textboxTemperatureReadOnly);
+            this.groupBox2.Controls.Add(this.deleteButton);
             this.groupBox2.Controls.Add(this.textboxEventHorizonReadOnly);
+            this.groupBox2.Controls.Add(this.addButton);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // statusStrip1
+            // 
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
+            this.statusStrip1.Name = "statusStrip1";
             // 
             // DataProcessing
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.deleteButton);
-            this.Controls.Add(this.addButton);
             this.Controls.Add(this.listViewItems);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -330,16 +348,18 @@
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.TextBox restWavelengthTextbox;
         private System.Windows.Forms.NumericUpDown eventHorizonPower;
-        private System.Windows.Forms.TextBox textboxEvenHorizonPower;
         private System.Windows.Forms.ListView listViewItems;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button deleteButton;
-        private System.Windows.Forms.ColumnHeader starVelocityColumn;
-        private System.Windows.Forms.ColumnHeader starDistanceColumn;
-        private System.Windows.Forms.ColumnHeader temperatureColumn;
-        private System.Windows.Forms.ColumnHeader eventHorizonColumn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnStarVelocity;
+        private System.Windows.Forms.ColumnHeader columnStarDistance;
+        private System.Windows.Forms.ColumnHeader columnTemperature;
+        private System.Windows.Forms.ColumnHeader columnEventHorizon;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
     }
 }
 
