@@ -74,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -90,6 +91,45 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\england.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\france.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\germany.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\france1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\england1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\england2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\england3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\france2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\germany1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thesun1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colourWheel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
