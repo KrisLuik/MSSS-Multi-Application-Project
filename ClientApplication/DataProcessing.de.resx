@@ -149,19 +149,19 @@
     <value>Sprache</value>
   </data>
   <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>137, 22</value>
   </data>
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
     <value>Englisch</value>
   </data>
   <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>137, 22</value>
   </data>
   <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
     <value>Französisch </value>
   </data>
   <data name="germanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>137, 22</value>
   </data>
   <data name="germanToolStripMenuItem.Text" xml:space="preserve">
     <value>Deutsch</value>
@@ -169,17 +169,14 @@
   <data name="themeToolStripMenuItem.Text" xml:space="preserve">
     <value>Thema</value>
   </data>
-  <data name="nightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
   <data name="nightModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Nacht-Modus</value>
   </data>
-  <data name="lightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
   <data name="lightModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Tagesmodus</value>
+  </data>
+  <data name="colourToolStripMenuItem.Text" xml:space="preserve">
+    <value>Farbe</value>
   </data>
   <data name="calculateButton.Text" xml:space="preserve">
     <value>Berechnung</value>

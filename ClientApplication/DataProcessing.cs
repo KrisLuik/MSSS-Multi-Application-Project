@@ -144,13 +144,18 @@ namespace ClientApplication
             else if (!string.IsNullOrWhiteSpace(textboxEventHorizon.Text) && powerOfEventHorizon > 0)
             {
                 var eventHorizonResult = channel.EventHorizon(eventResult);
-                textboxEventHorizon.Text = eventHorizonResult.ToString();   
-
+                textboxEventHorizonReadOnly.Text = eventHorizonResult.ToString();
             }
-            #endregion
-
         }
-        #region Language setting
+        #endregion
+        #region Language Setting
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("en");
+            Controls.Clear();
+            InitializeComponent();
+            Display();
+        }
         private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("fr");
@@ -166,12 +171,66 @@ namespace ClientApplication
             InitializeComponent();
             Display();
         }
-        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        #endregion
+        #region Style Settings
+        private void colourToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("en");
-            Controls.Clear();
-            InitializeComponent();
-            Display();
+            ColorDialog colorDlg = new ColorDialog();
+            if (colorDlg.ShowDialog() == DialogResult.OK)
+            {
+                BackgroundImage = null;
+                BackColor = colorDlg.Color;
+                byte r = (byte)(255 - BackColor.R);
+                byte g = (byte)(255 - BackColor.G);
+                byte b = (byte)(255 - BackColor.B);
+                ForeColor = Color.FromArgb(r, g, b);
+                foreach (var textBox in Controls.OfType<TextBox>())
+                {
+                    textBox.ForeColor = Color.FromArgb(r, g, b);
+                }
+            }
+        }
+        private void nightModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BackgroundImage = null;
+            BackColor = Color.DarkSlateBlue;
+            ForeColor = Color.LemonChiffon;
+            foreach (var button in Controls.OfType<Button>())
+            {
+                button.BackColor = Color.SteelBlue;
+                button.FlatStyle = FlatStyle.Flat;
+                button.FlatAppearance.BorderColor = Color.SlateBlue;
+
+            }
+            foreach (var label in Controls.OfType<Label>())
+            {
+                label.ForeColor = Color.LemonChiffon;
+            }
+            foreach (var textBox in Controls.OfType<TextBox>())
+            {
+                textBox.ForeColor = Color.SeaGreen;
+            }
+        }
+
+        private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BackgroundImage = null;
+            BackColor = Color.Bisque;
+            ForeColor = Color.Gold;
+            foreach (var button in Controls.OfType<Button>())
+            {
+                button.BackColor = Color.Firebrick;
+                button.FlatStyle = FlatStyle.Flat;
+                button.FlatAppearance.BorderColor = Color.OrangeRed;
+            }
+            foreach (var label in Controls.OfType<Label>())
+            {
+                label.ForeColor = Color.Green;
+            }
+            foreach (var textBox in Controls.OfType<TextBox>())
+            {
+                textBox.ForeColor = Color.DarkOrchid;
+            }
         }
         #endregion
     }

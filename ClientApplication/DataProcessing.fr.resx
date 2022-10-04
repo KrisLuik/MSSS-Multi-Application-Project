@@ -193,17 +193,14 @@
   <data name="themeToolStripMenuItem.Text" xml:space="preserve">
     <value>Thème</value>
   </data>
-  <data name="nightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
-  </data>
   <data name="nightModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Mode Nuit</value>
   </data>
-  <data name="lightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
-  </data>
   <data name="lightModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Mode Jour</value>
+  </data>
+  <data name="colourToolStripMenuItem.Text" xml:space="preserve">
+    <value>Couleur</value>
   </data>
   <data name="textboxEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 179</value>
