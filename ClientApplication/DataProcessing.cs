@@ -203,10 +203,23 @@ namespace ClientApplication
         private void nightModeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ChangeTheme("NightMode");
+            foreach (var button in Controls.OfType<Button>())
+            {
+                button.BackColor = Color.SteelBlue;
+                button.FlatStyle = FlatStyle.Flat;
+                button.FlatAppearance.BorderColor = Color.SlateBlue;
+
+            }
         }
         private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ChangeTheme("DayMode");
+            foreach (var button in Controls.OfType<Button>())
+            {
+                button.BackColor = Color.Firebrick;
+                button.FlatStyle = FlatStyle.Flat;
+                button.FlatAppearance.BorderColor = Color.OrangeRed;
+            }
         }
         private void colourToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -215,6 +228,12 @@ namespace ClientApplication
         private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ChangeTheme("DefaultMode");
+            foreach (var button in Controls.OfType<Button>())
+            {
+                button.BackColor = Color.White;
+                button.FlatStyle = FlatStyle.Flat;
+                button.FlatAppearance.BorderColor = Color.LightGray;
+            }
         }
         #endregion
         #region Language Setting Switch Case
@@ -283,13 +302,7 @@ namespace ClientApplication
             BackgroundImage = null;
             BackColor = Color.MidnightBlue;
             ForeColor = Color.Thistle;
-            foreach (var button in Controls.OfType<Button>())
-            {
-                button.BackColor = Color.SteelBlue;
-               // button.FlatStyle = FlatStyle.Flat;
-                //button.FlatAppearance.BorderColor = Color.SlateBlue;
 
-            }
             foreach (var label in Controls.OfType<Label>())
             {
                 label.ForeColor = Color.White;
@@ -304,12 +317,7 @@ namespace ClientApplication
             BackgroundImage = null;
             BackColor = Color.LightSalmon;
             ForeColor = Color.Yellow;
-            foreach (var button in Controls.OfType<Button>())
-            {
-                button.BackColor = Color.Firebrick;
-                button.FlatStyle = FlatStyle.Flat;
-                button.FlatAppearance.BorderColor = Color.OrangeRed;
-            }
+
             foreach (var label in Controls.OfType<Label>())
             {
                 label.ForeColor = Color.Black;
@@ -324,12 +332,7 @@ namespace ClientApplication
             BackgroundImage = null;
             BackColor = SystemColors.Control;
             ForeColor = SystemColors.ControlText;
-            foreach (var button in Controls.OfType<Button>())
-            {
-                button.BackColor = Color.White;
-                button.FlatStyle = FlatStyle.Flat;
-                button.FlatAppearance.BorderColor = Color.LightGray;
-            }
+
             foreach (var label in Controls.OfType<Label>())
             {
                 label.ForeColor = Color.Black;
