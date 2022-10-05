@@ -58,14 +58,14 @@ namespace ClientApplication
                     info.SetTempInKelvin(textboxTemperatureReadOnly.Text);
                     ClearTextBox(textboxTemperature);
                 }
-                if (!string.IsNullOrWhiteSpace(textboxEventHorizonReadOnly.Text) && eventHorizonPower.Value > 0)
+                if (!string.IsNullOrWhiteSpace(textboxEventHorizonReadOnly.Text) && eventHorizonPower.Value != 0)
                 {
                     info.SetEventHorizon(textboxEventHorizonReadOnly.Text);
                     ClearTextBox(textboxEventHorizon);
                 }
                 else
                 {
-                    MessageBox.Show("Error! Numeric Up/Down. Cannot be 0");
+                   
                 }
             }
             astroCalculationsList.Add(info);
@@ -108,55 +108,62 @@ namespace ClientApplication
         #region Calculate button
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            string address = "net.pipe://localhost/AstroServer";
-            NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
-            EndpointAddress ep = new EndpointAddress(address);
-            IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
+            try
+            {
+                string address = "net.pipe://localhost/AstroServer";
+                NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
+                EndpointAddress ep = new EndpointAddress(address);
+                IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
 
-            if (string.IsNullOrWhiteSpace(observedWavelengthTextbox.Text) &&
-                string.IsNullOrWhiteSpace(restWavelengthTextbox.Text) &&
-                string.IsNullOrWhiteSpace(textboxStarDistance.Text) &&
-                string.IsNullOrWhiteSpace(textboxTemperature.Text) &&
-                string.IsNullOrWhiteSpace(textboxEventHorizon.Text) &&
-                eventHorizonPower.Value == 0)
-            {
-                MessageBox.Show("Error! Textboxes are emtpy, add data.");
+                if (string.IsNullOrWhiteSpace(observedWavelengthTextbox.Text) &&
+                    string.IsNullOrWhiteSpace(restWavelengthTextbox.Text) &&
+                    string.IsNullOrWhiteSpace(textboxStarDistance.Text) &&
+                    string.IsNullOrWhiteSpace(textboxTemperature.Text) &&
+                    string.IsNullOrWhiteSpace(textboxEventHorizon.Text) &&
+                    eventHorizonPower.Value == 0)
+                {
+                    MessageBox.Show("Error! Textboxes are emtpy, add data.");
+                }
+                else
+                {
+                    if (!string.IsNullOrWhiteSpace(observedWavelengthTextbox.Text) &&
+                        !string.IsNullOrWhiteSpace(restWavelengthTextbox.Text))
+                    {
+                        double observedeWavelength = double.Parse(observedWavelengthTextbox.Text);
+                        double restWavelength = double.Parse(restWavelengthTextbox.Text);
+                        var starVelocityCalculation = channel.StarVelocity(observedeWavelength, restWavelength);
+                        textboxStarVelocityReadOnly.Text = starVelocityCalculation.ToString("F");
+                        ClearTextBox(observedWavelengthTextbox);
+                        restWavelengthTextbox.Clear();
+                    }
+                    if (!string.IsNullOrWhiteSpace(textboxStarDistance.Text))
+                    {
+                        double starDistanceData = double.Parse(textboxStarDistance.Text);
+                        var starDistanceCalculation = channel.StarDistance(starDistanceData);
+                        textboxStarDistanceReadOnly.Text = starDistanceCalculation.ToString("F");
+                        ClearTextBox(textboxStarDistance);
+                    }
+                    if (!string.IsNullOrWhiteSpace(textboxTemperature.Text))
+                    {
+                        double tempCelcius = double.Parse(textboxTemperature.Text);
+                        var result = channel.TempInKelvin(tempCelcius);
+                        textboxTemperatureReadOnly.Text = result.ToString();
+                        ClearTextBox(textboxTemperature);
+                    }
+                    if (!string.IsNullOrWhiteSpace(textboxEventHorizon.Text) && eventHorizonPower.Value > 0)
+                    {
+                        double eventHorizonData = double.Parse(textboxEventHorizon.Text);
+                        double powerOfEventHorizon = double.Parse(eventHorizonPower.Value.ToString());
+                        double eventResult = eventHorizonData * Math.Pow(10,powerOfEventHorizon);
+                        var eventHorizonResult = channel.EventHorizon(eventResult);
+                        textboxEventHorizonReadOnly.Text = eventHorizonResult.ToString("E");
+                        ClearTextBox(textboxEventHorizon);
+                    }
+                }
             }
-            else
+            catch (EndpointNotFoundException)
             {
-                if (!string.IsNullOrWhiteSpace(observedWavelengthTextbox.Text) &&
-                    !string.IsNullOrWhiteSpace(restWavelengthTextbox.Text))
-                {
-                    double observedeWavelength = double.Parse(observedWavelengthTextbox.Text);
-                    double restWavelength = double.Parse(restWavelengthTextbox.Text);
-                    var starVelocityCalculation = channel.StarVelocity(observedeWavelength, restWavelength);
-                    textboxStarVelocityReadOnly.Text = starVelocityCalculation.ToString();
-                    ClearTextBox(observedWavelengthTextbox);
-                    restWavelengthTextbox.Clear();
-                }
-                if (!string.IsNullOrWhiteSpace(textboxStarDistance.Text))
-                {
-                    double starDistanceData = double.Parse(textboxStarDistance.Text);
-                    var starDistanceCalculation = channel.StarDistance(starDistanceData);
-                    textboxStarDistanceReadOnly.Text = starDistanceCalculation.ToString();
-                    ClearTextBox(textboxStarDistance);
-                }
-                if (!string.IsNullOrWhiteSpace(textboxTemperature.Text))
-                {
-                    double tempCelcius = double.Parse(textboxTemperature.Text);
-                    var result = channel.TempInKelvin(tempCelcius);
-                    textboxTemperatureReadOnly.Text = result.ToString();
-                    ClearTextBox(textboxTemperature);
-                }
-                if (!string.IsNullOrWhiteSpace(textboxEventHorizon.Text) && eventHorizonPower.Value > 0)
-                {
-                    double eventHorizonData = double.Parse(textboxEventHorizon.Text);
-                    double powerOfEventHorizon = double.Parse(eventHorizonPower.Value.ToString());
-                    double eventResult = eventHorizonData * powerOfEventHorizon;
-                    var eventHorizonResult = channel.EventHorizon(eventResult);
-                    textboxEventHorizonReadOnly.Text = eventHorizonResult.ToString();
-                    ClearTextBox(textboxEventHorizon);
-                }
+                MessageBox.Show("Error! Not connected to server, try again.");
             }
         }
         #endregion
