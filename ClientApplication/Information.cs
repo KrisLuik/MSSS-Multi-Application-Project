@@ -56,15 +56,6 @@ namespace ClientApplication
         {
             return eventHorizon;
         }
-        //public ListViewItem DisplayCalculations()
-        //{
-        //    ListViewItem lvi = new ListViewItem();
-        //    lvi.SubItems.Add(GetStarVelocity());
-        //    lvi.SubItems.Add(GetStarDistance());
-        //    lvi.SubItems.Add(GetTempInKelvin());    
-        //    lvi.SubItems.Add(GetEventHorizon());    
-        //    return lvi;
-        //}
         public int CompareTo(Information starVelocityObject)
         {
             return starVelocity.CompareTo(starVelocityObject.GetStarVelocity());

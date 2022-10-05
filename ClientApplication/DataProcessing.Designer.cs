@@ -33,10 +33,6 @@
             this.labelStarDistance = new System.Windows.Forms.Label();
             this.labelTempInKelvin = new System.Windows.Forms.Label();
             this.labelEventHorizon = new System.Windows.Forms.Label();
-            this.textboxStarVelocityReadOnly = new System.Windows.Forms.TextBox();
-            this.textboxStarDistanceReadOnly = new System.Windows.Forms.TextBox();
-            this.textboxTemperatureReadOnly = new System.Windows.Forms.TextBox();
-            this.textboxEventHorizonReadOnly = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,16 +55,16 @@
             this.columnStarDistance = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnTemperature = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnEventHorizon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.addButton = new System.Windows.Forms.Button();
-            this.deleteButton = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
+            this.textboxEventHorizonReadOnly = new System.Windows.Forms.TextBox();
+            this.textboxTemperatureReadOnly = new System.Windows.Forms.TextBox();
+            this.textboxStarDistanceReadOnly = new System.Windows.Forms.TextBox();
+            this.textboxStarVelocityReadOnly = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventHorizonPower)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelStarVelocity
@@ -91,30 +87,6 @@
             resources.ApplyResources(this.labelEventHorizon, "labelEventHorizon");
             this.labelEventHorizon.Name = "labelEventHorizon";
             // 
-            // textboxStarVelocityReadOnly
-            // 
-            resources.ApplyResources(this.textboxStarVelocityReadOnly, "textboxStarVelocityReadOnly");
-            this.textboxStarVelocityReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textboxStarVelocityReadOnly.Name = "textboxStarVelocityReadOnly";
-            // 
-            // textboxStarDistanceReadOnly
-            // 
-            resources.ApplyResources(this.textboxStarDistanceReadOnly, "textboxStarDistanceReadOnly");
-            this.textboxStarDistanceReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textboxStarDistanceReadOnly.Name = "textboxStarDistanceReadOnly";
-            // 
-            // textboxTemperatureReadOnly
-            // 
-            resources.ApplyResources(this.textboxTemperatureReadOnly, "textboxTemperatureReadOnly");
-            this.textboxTemperatureReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textboxTemperatureReadOnly.Name = "textboxTemperatureReadOnly";
-            // 
-            // textboxEventHorizonReadOnly
-            // 
-            resources.ApplyResources(this.textboxEventHorizonReadOnly, "textboxEventHorizonReadOnly");
-            this.textboxEventHorizonReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textboxEventHorizonReadOnly.Name = "textboxEventHorizonReadOnly";
-            // 
             // menuStrip1
             // 
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
@@ -126,83 +98,87 @@
             // 
             // languageToolStripMenuItem
             // 
-            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
             this.frenchToolStripMenuItem,
             this.germanToolStripMenuItem});
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             // 
             // englishToolStripMenuItem
             // 
-            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Image = global::ClientApplication.Properties.Resources.england3;
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // frenchToolStripMenuItem
             // 
-            resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
             this.frenchToolStripMenuItem.Image = global::ClientApplication.Properties.Resources.france2;
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
+            resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
             this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
             // 
             // germanToolStripMenuItem
             // 
-            resources.ApplyResources(this.germanToolStripMenuItem, "germanToolStripMenuItem");
             this.germanToolStripMenuItem.Image = global::ClientApplication.Properties.Resources.germany1;
             this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
+            resources.ApplyResources(this.germanToolStripMenuItem, "germanToolStripMenuItem");
             this.germanToolStripMenuItem.Click += new System.EventHandler(this.germanToolStripMenuItem_Click);
             // 
             // themeToolStripMenuItem
             // 
-            resources.ApplyResources(this.themeToolStripMenuItem, "themeToolStripMenuItem");
             this.themeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nightModeToolStripMenuItem,
             this.lightModeToolStripMenuItem,
             this.colourToolStripMenuItem});
+            resources.ApplyResources(this.themeToolStripMenuItem, "themeToolStripMenuItem");
             this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
             // 
             // nightModeToolStripMenuItem
             // 
-            resources.ApplyResources(this.nightModeToolStripMenuItem, "nightModeToolStripMenuItem");
             this.nightModeToolStripMenuItem.Image = global::ClientApplication.Properties.Resources.moon;
             this.nightModeToolStripMenuItem.Name = "nightModeToolStripMenuItem";
+            resources.ApplyResources(this.nightModeToolStripMenuItem, "nightModeToolStripMenuItem");
             this.nightModeToolStripMenuItem.Click += new System.EventHandler(this.nightModeToolStripMenuItem_Click);
             // 
             // lightModeToolStripMenuItem
             // 
-            resources.ApplyResources(this.lightModeToolStripMenuItem, "lightModeToolStripMenuItem");
             this.lightModeToolStripMenuItem.Image = global::ClientApplication.Properties.Resources.thesun1;
             this.lightModeToolStripMenuItem.Name = "lightModeToolStripMenuItem";
+            resources.ApplyResources(this.lightModeToolStripMenuItem, "lightModeToolStripMenuItem");
             this.lightModeToolStripMenuItem.Click += new System.EventHandler(this.lightModeToolStripMenuItem_Click);
             // 
             // colourToolStripMenuItem
             // 
-            resources.ApplyResources(this.colourToolStripMenuItem, "colourToolStripMenuItem");
             this.colourToolStripMenuItem.Image = global::ClientApplication.Properties.Resources.colourWheel;
             this.colourToolStripMenuItem.Name = "colourToolStripMenuItem";
+            resources.ApplyResources(this.colourToolStripMenuItem, "colourToolStripMenuItem");
             this.colourToolStripMenuItem.Click += new System.EventHandler(this.colourToolStripMenuItem_Click);
             // 
             // textboxEventHorizon
             // 
             resources.ApplyResources(this.textboxEventHorizon, "textboxEventHorizon");
             this.textboxEventHorizon.Name = "textboxEventHorizon";
+            this.textboxEventHorizon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressAction);
             // 
             // textboxTemperature
             // 
             resources.ApplyResources(this.textboxTemperature, "textboxTemperature");
             this.textboxTemperature.Name = "textboxTemperature";
+            this.textboxTemperature.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressAction);
             // 
             // textboxStarDistance
             // 
             resources.ApplyResources(this.textboxStarDistance, "textboxStarDistance");
             this.textboxStarDistance.Name = "textboxStarDistance";
+            this.textboxStarDistance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressAction);
             // 
             // observedWavelengthTextbox
             // 
             resources.ApplyResources(this.observedWavelengthTextbox, "observedWavelengthTextbox");
             this.observedWavelengthTextbox.Name = "observedWavelengthTextbox";
+            this.observedWavelengthTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressAction);
             // 
             // calculateButton
             // 
@@ -215,6 +191,7 @@
             // 
             resources.ApplyResources(this.restWavelengthTextbox, "restWavelengthTextbox");
             this.restWavelengthTextbox.Name = "restWavelengthTextbox";
+            this.restWavelengthTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressAction);
             // 
             // eventHorizonPower
             // 
@@ -223,13 +200,13 @@
             // 
             // listViewItems
             // 
-            resources.ApplyResources(this.listViewItems, "listViewItems");
             this.listViewItems.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader2,
             this.columnStarVelocity,
             this.columnStarDistance,
             this.columnTemperature,
             this.columnEventHorizon});
+            resources.ApplyResources(this.listViewItems, "listViewItems");
             this.listViewItems.FullRowSelect = true;
             this.listViewItems.GridLines = true;
             this.listViewItems.HideSelection = false;
@@ -259,12 +236,16 @@
             // 
             resources.ApplyResources(this.columnEventHorizon, "columnEventHorizon");
             // 
-            // addButton
+            // textBox1
             // 
-            resources.ApplyResources(this.addButton, "addButton");
-            this.addButton.Name = "addButton";
-            this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            // 
+            // statusStrip1
+            // 
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
+            this.statusStrip1.Name = "statusStrip1";
             // 
             // deleteButton
             // 
@@ -273,67 +254,67 @@
             this.deleteButton.UseVisualStyleBackColor = true;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
-            // groupBox1
+            // addButton
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.labelStarVelocity);
-            this.groupBox1.Controls.Add(this.textboxEventHorizon);
-            this.groupBox1.Controls.Add(this.labelEventHorizon);
-            this.groupBox1.Controls.Add(this.labelTempInKelvin);
-            this.groupBox1.Controls.Add(this.eventHorizonPower);
-            this.groupBox1.Controls.Add(this.textboxTemperature);
-            this.groupBox1.Controls.Add(this.restWavelengthTextbox);
-            this.groupBox1.Controls.Add(this.textboxStarDistance);
-            this.groupBox1.Controls.Add(this.calculateButton);
-            this.groupBox1.Controls.Add(this.labelStarDistance);
-            this.groupBox1.Controls.Add(this.observedWavelengthTextbox);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            resources.ApplyResources(this.addButton, "addButton");
+            this.addButton.Name = "addButton";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
-            // textBox1
+            // textboxEventHorizonReadOnly
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
+            this.textboxEventHorizonReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.textboxEventHorizonReadOnly, "textboxEventHorizonReadOnly");
+            this.textboxEventHorizonReadOnly.Name = "textboxEventHorizonReadOnly";
             // 
-            // groupBox2
+            // textboxTemperatureReadOnly
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox2.Controls.Add(this.textboxStarVelocityReadOnly);
-            this.groupBox2.Controls.Add(this.textboxStarDistanceReadOnly);
-            this.groupBox2.Controls.Add(this.textboxTemperatureReadOnly);
-            this.groupBox2.Controls.Add(this.deleteButton);
-            this.groupBox2.Controls.Add(this.textboxEventHorizonReadOnly);
-            this.groupBox2.Controls.Add(this.addButton);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
+            this.textboxTemperatureReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.textboxTemperatureReadOnly, "textboxTemperatureReadOnly");
+            this.textboxTemperatureReadOnly.Name = "textboxTemperatureReadOnly";
             // 
-            // statusStrip1
+            // textboxStarDistanceReadOnly
             // 
-            resources.ApplyResources(this.statusStrip1, "statusStrip1");
-            this.statusStrip1.Name = "statusStrip1";
+            this.textboxStarDistanceReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.textboxStarDistanceReadOnly, "textboxStarDistanceReadOnly");
+            this.textboxStarDistanceReadOnly.Name = "textboxStarDistanceReadOnly";
+            // 
+            // textboxStarVelocityReadOnly
+            // 
+            this.textboxStarVelocityReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.textboxStarVelocityReadOnly, "textboxStarVelocityReadOnly");
+            this.textboxStarVelocityReadOnly.Name = "textboxStarVelocityReadOnly";
             // 
             // DataProcessing
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textboxStarVelocityReadOnly);
+            this.Controls.Add(this.textboxStarDistanceReadOnly);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textboxTemperatureReadOnly);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.labelStarVelocity);
+            this.Controls.Add(this.textboxEventHorizonReadOnly);
+            this.Controls.Add(this.addButton);
+            this.Controls.Add(this.textboxEventHorizon);
+            this.Controls.Add(this.labelEventHorizon);
             this.Controls.Add(this.listViewItems);
+            this.Controls.Add(this.labelTempInKelvin);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.eventHorizonPower);
+            this.Controls.Add(this.textboxTemperature);
+            this.Controls.Add(this.observedWavelengthTextbox);
+            this.Controls.Add(this.restWavelengthTextbox);
+            this.Controls.Add(this.labelStarDistance);
+            this.Controls.Add(this.textboxStarDistance);
+            this.Controls.Add(this.calculateButton);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "DataProcessing";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventHorizonPower)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,10 +326,6 @@
         private System.Windows.Forms.Label labelStarDistance;
         private System.Windows.Forms.Label labelTempInKelvin;
         private System.Windows.Forms.Label labelEventHorizon;
-        private System.Windows.Forms.TextBox textboxStarVelocityReadOnly;
-        private System.Windows.Forms.TextBox textboxStarDistanceReadOnly;
-        private System.Windows.Forms.TextBox textboxTemperatureReadOnly;
-        private System.Windows.Forms.TextBox textboxEventHorizonReadOnly;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
@@ -365,10 +342,6 @@
         private System.Windows.Forms.TextBox restWavelengthTextbox;
         private System.Windows.Forms.NumericUpDown eventHorizonPower;
         private System.Windows.Forms.ListView listViewItems;
-        private System.Windows.Forms.Button addButton;
-        private System.Windows.Forms.Button deleteButton;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnStarVelocity;
         private System.Windows.Forms.ColumnHeader columnStarDistance;
@@ -377,6 +350,12 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripMenuItem colourToolStripMenuItem;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.TextBox textboxEventHorizonReadOnly;
+        private System.Windows.Forms.TextBox textboxTemperatureReadOnly;
+        private System.Windows.Forms.TextBox textboxStarDistanceReadOnly;
+        private System.Windows.Forms.TextBox textboxStarVelocityReadOnly;
     }
 }
 

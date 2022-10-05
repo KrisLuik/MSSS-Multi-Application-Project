@@ -27,6 +27,7 @@ namespace ClientApplication
         private void addButton_Click(object sender, EventArgs e)
         {
             // ClearStatusMessage();
+            observedWavelengthTextbox.Focus();
             // if (!string.IsNullOrWhiteSpace(textboxStarVelocityReadOnly.Text) &&
             //    !string.IsNullOrWhiteSpace(textboxStarDistance.Text))
             // {
@@ -38,7 +39,7 @@ namespace ClientApplication
             astroCalculationsList.Add(info);
             astroCalculationsList.Sort();
             Display();
-            // ClearAllTextBoxes();
+            ClearAllTextBoxes();
             // toolStripStatusLabel.Text = "Calculations added.";
             //}
         }
@@ -114,37 +115,50 @@ namespace ClientApplication
             EndpointAddress ep = new EndpointAddress(address);
             IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
 
-            double observedeWavelength = double.Parse(observedWavelengthTextbox.Text);
-            double restWavelength = double.Parse(restWavelengthTextbox.Text);
-
-            double starDistanceData = double.Parse(textboxStarDistance.Text);
-            double tempCelcius = double.Parse(textboxTemperature.Text);
-
-            double eventHorizonData = double.Parse(textboxEventHorizon.Text);
-            double powerOfEventHorizon = double.Parse(eventHorizonPower.Value.ToString());
-            double eventResult = eventHorizonData * powerOfEventHorizon;
-
-            if (!string.IsNullOrWhiteSpace(observedWavelengthTextbox.Text) &&
-                !string.IsNullOrWhiteSpace(restWavelengthTextbox.Text))
+            if (string.IsNullOrWhiteSpace(observedWavelengthTextbox.Text) &&
+                string.IsNullOrWhiteSpace(restWavelengthTextbox.Text) &&
+                string.IsNullOrWhiteSpace(textboxStarDistance.Text) &&
+                string.IsNullOrWhiteSpace(textboxTemperature.Text) &&
+                string.IsNullOrWhiteSpace(textboxEventHorizon.Text) &&
+                eventHorizonPower.Value == 0)
             {
-                var starVelocityCalculation = channel.StarVelocity(observedeWavelength, restWavelength);
-                var resultSV = textboxStarVelocityReadOnly.Text;
+                MessageBox.Show("textboxes are empty");
             }
-            else if (!string.IsNullOrWhiteSpace(textboxStarDistance.Text))
+            else
             {
-                var starDistanceCalculation = channel.StarDistance(starDistanceData);
-                var resultStarDistance = textboxStarDistanceReadOnly.Text;
-            }
-            else if (!string.IsNullOrWhiteSpace(textboxTemperature.Text))
-            {
-                var result = channel.TempInKelvin(tempCelcius);
-                textboxTemperatureReadOnly.Text = result.ToString();
-
-            }
-            else if (!string.IsNullOrWhiteSpace(textboxEventHorizon.Text) && powerOfEventHorizon > 0)
-            {
-                var eventHorizonResult = channel.EventHorizon(eventResult);
-                textboxEventHorizonReadOnly.Text = eventHorizonResult.ToString();
+                if (!string.IsNullOrWhiteSpace(observedWavelengthTextbox.Text) &&
+                    !string.IsNullOrWhiteSpace(restWavelengthTextbox.Text))
+                {
+                    double observedeWavelength = double.Parse(observedWavelengthTextbox.Text);
+                    double restWavelength = double.Parse(restWavelengthTextbox.Text);
+                    var starVelocityCalculation = channel.StarVelocity(observedeWavelength, restWavelength);
+                    textboxStarVelocityReadOnly.Text = starVelocityCalculation.ToString();
+                    ClearTextBox(observedWavelengthTextbox);
+                    restWavelengthTextbox.Clear();
+                }
+                if (!string.IsNullOrWhiteSpace(textboxStarDistance.Text))
+                {
+                    double starDistanceData = double.Parse(textboxStarDistance.Text);
+                    var starDistanceCalculation = channel.StarDistance(starDistanceData);
+                    textboxStarDistanceReadOnly.Text = starDistanceCalculation.ToString();
+                    ClearTextBox(textboxStarDistance);
+                }
+                if (!string.IsNullOrWhiteSpace(textboxTemperature.Text))
+                {
+                    double tempCelcius = double.Parse(textboxTemperature.Text);
+                    var result = channel.TempInKelvin(tempCelcius);
+                    textboxTemperatureReadOnly.Text = result.ToString();
+                    ClearTextBox(textboxTemperature);
+                }
+                if (!string.IsNullOrWhiteSpace(textboxEventHorizon.Text) && eventHorizonPower.Value > 0)
+                {
+                    double eventHorizonData = double.Parse(textboxEventHorizon.Text);
+                    double powerOfEventHorizon = double.Parse(eventHorizonPower.Value.ToString());
+                    double eventResult = eventHorizonData * powerOfEventHorizon;
+                    var eventHorizonResult = channel.EventHorizon(eventResult);
+                    textboxEventHorizonReadOnly.Text = eventHorizonResult.ToString();
+                    ClearTextBox(textboxEventHorizon);
+                }
             }
         }
         #endregion
@@ -193,8 +207,8 @@ namespace ClientApplication
         private void nightModeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BackgroundImage = null;
-            BackColor = Color.DarkSlateBlue;
-            ForeColor = Color.LemonChiffon;
+            BackColor = Color.MidnightBlue;
+            ForeColor = Color.LavenderBlush;
             foreach (var button in Controls.OfType<Button>())
             {
                 button.BackColor = Color.SteelBlue;
@@ -204,19 +218,19 @@ namespace ClientApplication
             }
             foreach (var label in Controls.OfType<Label>())
             {
-                label.ForeColor = Color.LemonChiffon;
+                label.ForeColor = Color.LavenderBlush;
             }
             foreach (var textBox in Controls.OfType<TextBox>())
             {
-                textBox.ForeColor = Color.SeaGreen;
+                textBox.ForeColor = Color.LightYellow;
             }
         }
 
         private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BackgroundImage = null;
-            BackColor = Color.Bisque;
-            ForeColor = Color.Gold;
+            BackColor = Color.LightSalmon;
+            ForeColor = Color.Yellow;
             foreach (var button in Controls.OfType<Button>())
             {
                 button.BackColor = Color.Firebrick;
@@ -225,11 +239,80 @@ namespace ClientApplication
             }
             foreach (var label in Controls.OfType<Label>())
             {
-                label.ForeColor = Color.Green;
+                label.ForeColor = Color.Goldenrod;
             }
             foreach (var textBox in Controls.OfType<TextBox>())
             {
-                textBox.ForeColor = Color.DarkOrchid;
+                textBox.ForeColor = Color.Magenta;
+            }
+        }
+        #endregion
+        #region Clear TextBoxes Method
+        private void ClearTextBox(TextBox textbox)
+        {
+            textbox.Clear();
+            textbox.Focus();
+        }
+        private void ClearAllTextBoxes()
+        {
+            observedWavelengthTextbox.Clear();
+            restWavelengthTextbox.Clear();
+            textboxStarVelocityReadOnly.Clear();
+            observedWavelengthTextbox.Focus();
+
+            textboxStarDistance.Clear();
+            textboxStarDistanceReadOnly.Clear();
+
+            textboxTemperature.Clear();
+            textboxTemperatureReadOnly.Clear();
+
+            textboxEventHorizon.Clear();
+            textboxEventHorizonReadOnly.Clear();
+        }
+
+        #endregion
+        #region TextBoxes Input Handling
+        private void KeyPressAction(Object sender, KeyPressEventArgs e)
+        {
+            // "sender" stands for the object that raises the event.
+            // I am casting the sender using "as" keyword to avoid runtime exception
+            // that would occur if I used "Textbox tb = Textbox(sender)".
+            TextBox tb = sender as TextBox;
+
+            if (tb == null)
+            {
+                MessageBox.Show("Keypress event was not fired by a textbox.");
+                e.Handled = true;
+            }
+
+            if ((tb.Text.IndexOf('-') > -1) && tb.SelectionStart == 0 && !tb.SelectedText.Contains('-'))
+            {
+                e.Handled = true;
+            }
+            // Do not accept a character that is not included in the following.
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != '-')
+            {
+                e.Handled = true;
+            }
+            // Only allow one decimal point.
+            if ((e.KeyChar == '.') && (tb.Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+            // The negative sign can only be at the start.
+            if ((e.KeyChar == '-'))
+            {
+                // If the cursor is not at the start of the text, the key press is not valid.
+                if (tb.SelectionStart > 0)
+                {
+                    e.Handled = true;
+                }
+                // If there is already a negative sign and the negative sign is not selected, the key press is not valid
+                // This allows the user to highlight some of the text and replace it with a negative sign.
+                if (tb.Text.IndexOf('-') > -1 && !tb.SelectedText.Contains('-'))
+                {
+                    e.Handled = true;
+                }
             }
         }
         #endregion
