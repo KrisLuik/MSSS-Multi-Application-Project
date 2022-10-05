@@ -8,10 +8,13 @@ using System.IO.Pipes;
 using System.Linq;
 using System.Runtime.Remoting.Channels;
 using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+// Name: Kristiin Tribbeck
+// Student ID: 30045325
+// Development of a multi-application system that will connect several clients with a remote server. 
 
 namespace ClientApplication
 {
@@ -29,10 +32,42 @@ namespace ClientApplication
         {
             observedWavelengthTextbox.Focus();
             Information info = new Information();
-            info.SetStarVelocity(textboxStarVelocityReadOnly.Text);
-            info.SetStarDistance(textboxStarDistanceReadOnly.Text);
-            info.SetTempInKelvin(textboxTemperatureReadOnly.Text);
-            info.SetEventHorizon(textboxEventHorizonReadOnly.Text);
+            if (string.IsNullOrWhiteSpace(textboxStarVelocityReadOnly.Text) &&
+                string.IsNullOrWhiteSpace(textboxStarDistanceReadOnly.Text) &&
+                string.IsNullOrWhiteSpace(textboxTemperatureReadOnly.Text) &&
+                string.IsNullOrWhiteSpace(textboxEventHorizonReadOnly.Text) &&
+                eventHorizonPower.Value == 0)
+            {
+                MessageBox.Show("Error! Textboxes are emtpy, add data.");
+            }
+            else
+            {
+                if (!string.IsNullOrWhiteSpace(textboxStarVelocityReadOnly.Text))
+                {
+                    info.SetStarVelocity(textboxStarVelocityReadOnly.Text);
+                    ClearTextBox(observedWavelengthTextbox);
+                    restWavelengthTextbox.Clear();
+                }
+                if (!string.IsNullOrWhiteSpace(textboxStarDistanceReadOnly.Text))
+                {
+                    info.SetStarDistance(textboxStarDistanceReadOnly.Text);
+                    ClearTextBox(textboxStarDistance);
+                }
+                if (!string.IsNullOrWhiteSpace(textboxTemperatureReadOnly.Text))
+                {
+                    info.SetTempInKelvin(textboxTemperatureReadOnly.Text);
+                    ClearTextBox(textboxTemperature);
+                }
+                if (!string.IsNullOrWhiteSpace(textboxEventHorizonReadOnly.Text) && eventHorizonPower.Value > 0)
+                {
+                    info.SetEventHorizon(textboxEventHorizonReadOnly.Text);
+                    ClearTextBox(textboxEventHorizon);
+                }
+                else
+                {
+                    MessageBox.Show("Error! Numeric Up/Down. Cannot be 0");
+                }
+            }
             astroCalculationsList.Add(info);
             Display();
             ClearAllTextBoxes();
