@@ -175,7 +175,7 @@ namespace ClientApplication
             }
         }
         #endregion
-        #region Highlight data from listview
+        #region Highlight Data from Listview
         private void listViewItems_MouseClick(object sender, MouseEventArgs e)
         {
             int currentItem = listViewItems.SelectedIndices[0];
@@ -185,8 +185,8 @@ namespace ClientApplication
             textboxEventHorizonReadOnly.Text = astroCalculationsList[currentItem].GetEventHorizon();
         }
         #endregion
-        #region Language ToolstripMenuItems
-
+        #region Language and Theme ToolstripMenuItems Click Event
+        // Languages.
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ChangeLanguage("en");
@@ -199,9 +199,25 @@ namespace ClientApplication
         {
             ChangeLanguage("de");
         }
-
+        // Themes.
+        private void nightModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeTheme("NightMode");
+        }
+        private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeTheme("DayMode");
+        }
+        private void colourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeTheme("ColorWheelStyle");
+        }
+        private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeTheme("DefaultMode");
+        }
         #endregion
-        #region Language Setting
+        #region Language Setting Switch Case
         private void ChangeLanguage(string language)
         {
             switch (language)
@@ -221,7 +237,7 @@ namespace ClientApplication
             Display();
         }
         #endregion
-        #region Style Settings
+        #region Theme Setting Switch Case
         private void ChangeTheme(string theme)
         {
             switch (theme)
@@ -244,7 +260,7 @@ namespace ClientApplication
             Display();
         }
         #endregion
-        #region Style Methods
+        #region Theme and Style Setting Methods
         private void ColorWheelStyle()
         {
             ColorDialog colorDlg = new ColorDialog();
@@ -266,12 +282,12 @@ namespace ClientApplication
         {
             BackgroundImage = null;
             BackColor = Color.MidnightBlue;
-            ForeColor = Color.LavenderBlush;
+            ForeColor = Color.Thistle;
             foreach (var button in Controls.OfType<Button>())
             {
                 button.BackColor = Color.SteelBlue;
-                button.FlatStyle = FlatStyle.Flat;
-                button.FlatAppearance.BorderColor = Color.SlateBlue;
+               // button.FlatStyle = FlatStyle.Flat;
+                //button.FlatAppearance.BorderColor = Color.SlateBlue;
 
             }
             foreach (var label in Controls.OfType<Label>())
@@ -310,36 +326,18 @@ namespace ClientApplication
             ForeColor = SystemColors.ControlText;
             foreach (var button in Controls.OfType<Button>())
             {
-                button.BackColor = SystemColors.Control;
+                button.BackColor = Color.White;
                 button.FlatStyle = FlatStyle.Flat;
-                button.FlatAppearance.BorderColor = SystemColors.ControlDark;
+                button.FlatAppearance.BorderColor = Color.LightGray;
             }
             foreach (var label in Controls.OfType<Label>())
             {
-                label.ForeColor = SystemColors.ControlText;
+                label.ForeColor = Color.Black;
             }
             foreach (var textBox in Controls.OfType<TextBox>())
             {
-                textBox.ForeColor = SystemColors.ControlText;
+                textBox.ForeColor = Color.WhiteSmoke;
             }
-        }
-        #endregion
-        #region Colour ToolstripMenuItems Click 
-        private void nightModeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ChangeTheme("NightMode");
-        }
-        private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ChangeTheme("DayMode");
-        }
-        private void colourToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ChangeTheme("ColorWheelStyle");
-        }
-        private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ChangeTheme("DefaultMode");
         }
         #endregion
         #region Clear TextBoxes Method
@@ -417,6 +415,5 @@ namespace ClientApplication
             observedWavelengthTextbox.Focus();
         }
         #endregion
-
     }
 }
