@@ -42,6 +42,7 @@
             this.nightModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lightModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.defaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textboxEventHorizon = new System.Windows.Forms.TextBox();
             this.textboxTemperature = new System.Windows.Forms.TextBox();
             this.textboxStarDistance = new System.Windows.Forms.TextBox();
@@ -63,7 +64,6 @@
             this.textboxTemperatureReadOnly = new System.Windows.Forms.TextBox();
             this.textboxStarDistanceReadOnly = new System.Windows.Forms.TextBox();
             this.textboxStarVelocityReadOnly = new System.Windows.Forms.TextBox();
-            this.defaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventHorizonPower)).BeginInit();
             this.SuspendLayout();
@@ -99,64 +99,70 @@
             // 
             // languageToolStripMenuItem
             // 
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
             this.frenchToolStripMenuItem,
             this.germanToolStripMenuItem});
-            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             // 
             // englishToolStripMenuItem
             // 
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Image = global::ClientApplication.Properties.Resources.england3;
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // frenchToolStripMenuItem
             // 
+            resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
             this.frenchToolStripMenuItem.Image = global::ClientApplication.Properties.Resources.france2;
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
             this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
             // 
             // germanToolStripMenuItem
             // 
+            resources.ApplyResources(this.germanToolStripMenuItem, "germanToolStripMenuItem");
             this.germanToolStripMenuItem.Image = global::ClientApplication.Properties.Resources.germany1;
             this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
-            resources.ApplyResources(this.germanToolStripMenuItem, "germanToolStripMenuItem");
             this.germanToolStripMenuItem.Click += new System.EventHandler(this.germanToolStripMenuItem_Click);
             // 
             // themeToolStripMenuItem
             // 
+            resources.ApplyResources(this.themeToolStripMenuItem, "themeToolStripMenuItem");
             this.themeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nightModeToolStripMenuItem,
             this.lightModeToolStripMenuItem,
             this.colourToolStripMenuItem,
             this.defaultToolStripMenuItem});
-            resources.ApplyResources(this.themeToolStripMenuItem, "themeToolStripMenuItem");
             this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
             // 
             // nightModeToolStripMenuItem
             // 
+            resources.ApplyResources(this.nightModeToolStripMenuItem, "nightModeToolStripMenuItem");
             this.nightModeToolStripMenuItem.Image = global::ClientApplication.Properties.Resources.moon;
             this.nightModeToolStripMenuItem.Name = "nightModeToolStripMenuItem";
-            resources.ApplyResources(this.nightModeToolStripMenuItem, "nightModeToolStripMenuItem");
             this.nightModeToolStripMenuItem.Click += new System.EventHandler(this.nightModeToolStripMenuItem_Click);
             // 
             // lightModeToolStripMenuItem
             // 
+            resources.ApplyResources(this.lightModeToolStripMenuItem, "lightModeToolStripMenuItem");
             this.lightModeToolStripMenuItem.Image = global::ClientApplication.Properties.Resources.thesun1;
             this.lightModeToolStripMenuItem.Name = "lightModeToolStripMenuItem";
-            resources.ApplyResources(this.lightModeToolStripMenuItem, "lightModeToolStripMenuItem");
             this.lightModeToolStripMenuItem.Click += new System.EventHandler(this.lightModeToolStripMenuItem_Click);
             // 
             // colourToolStripMenuItem
             // 
+            resources.ApplyResources(this.colourToolStripMenuItem, "colourToolStripMenuItem");
             this.colourToolStripMenuItem.Image = global::ClientApplication.Properties.Resources.colourWheel;
             this.colourToolStripMenuItem.Name = "colourToolStripMenuItem";
-            resources.ApplyResources(this.colourToolStripMenuItem, "colourToolStripMenuItem");
             this.colourToolStripMenuItem.Click += new System.EventHandler(this.colourToolStripMenuItem_Click);
+            // 
+            // defaultToolStripMenuItem
+            // 
+            resources.ApplyResources(this.defaultToolStripMenuItem, "defaultToolStripMenuItem");
+            this.defaultToolStripMenuItem.Name = "defaultToolStripMenuItem";
+            this.defaultToolStripMenuItem.Click += new System.EventHandler(this.defaultToolStripMenuItem_Click);
             // 
             // textboxEventHorizon
             // 
@@ -202,13 +208,13 @@
             // 
             // listViewItems
             // 
+            resources.ApplyResources(this.listViewItems, "listViewItems");
             this.listViewItems.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader2,
             this.columnStarVelocity,
             this.columnStarDistance,
             this.columnTemperature,
             this.columnEventHorizon});
-            resources.ApplyResources(this.listViewItems, "listViewItems");
             this.listViewItems.FullRowSelect = true;
             this.listViewItems.GridLines = true;
             this.listViewItems.HideSelection = false;
@@ -247,6 +253,7 @@
             // statusStrip1
             // 
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Name = "statusStrip1";
             // 
             // deleteButton
@@ -265,33 +272,31 @@
             // 
             // textboxEventHorizonReadOnly
             // 
-            this.textboxEventHorizonReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.textboxEventHorizonReadOnly, "textboxEventHorizonReadOnly");
+            this.textboxEventHorizonReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textboxEventHorizonReadOnly.Name = "textboxEventHorizonReadOnly";
+            this.textboxEventHorizonReadOnly.ReadOnly = true;
             // 
             // textboxTemperatureReadOnly
             // 
-            this.textboxTemperatureReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.textboxTemperatureReadOnly, "textboxTemperatureReadOnly");
+            this.textboxTemperatureReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textboxTemperatureReadOnly.Name = "textboxTemperatureReadOnly";
+            this.textboxTemperatureReadOnly.ReadOnly = true;
             // 
             // textboxStarDistanceReadOnly
             // 
-            this.textboxStarDistanceReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.textboxStarDistanceReadOnly, "textboxStarDistanceReadOnly");
+            this.textboxStarDistanceReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textboxStarDistanceReadOnly.Name = "textboxStarDistanceReadOnly";
+            this.textboxStarDistanceReadOnly.ReadOnly = true;
             // 
             // textboxStarVelocityReadOnly
             // 
-            this.textboxStarVelocityReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.textboxStarVelocityReadOnly, "textboxStarVelocityReadOnly");
+            this.textboxStarVelocityReadOnly.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textboxStarVelocityReadOnly.Name = "textboxStarVelocityReadOnly";
-            // 
-            // defaultToolStripMenuItem
-            // 
-            this.defaultToolStripMenuItem.Name = "defaultToolStripMenuItem";
-            resources.ApplyResources(this.defaultToolStripMenuItem, "defaultToolStripMenuItem");
-            this.defaultToolStripMenuItem.Click += new System.EventHandler(this.defaultToolStripMenuItem_Click);
+            this.textboxStarVelocityReadOnly.ReadOnly = true;
             // 
             // DataProcessing
             // 
