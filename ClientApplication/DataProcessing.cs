@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Globalization;
 using System.IO.Pipes;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,55 +27,20 @@ namespace ClientApplication
         #region Add button
         private void addButton_Click(object sender, EventArgs e)
         {
-            // ClearStatusMessage();
             observedWavelengthTextbox.Focus();
-            // if (!string.IsNullOrWhiteSpace(textboxStarVelocityReadOnly.Text) &&
-            //    !string.IsNullOrWhiteSpace(textboxStarDistance.Text))
-            // {
             Information info = new Information();
             info.SetStarVelocity(textboxStarVelocityReadOnly.Text);
             info.SetStarDistance(textboxStarDistanceReadOnly.Text);
             info.SetTempInKelvin(textboxTemperatureReadOnly.Text);
             info.SetEventHorizon(textboxEventHorizonReadOnly.Text);
             astroCalculationsList.Add(info);
-            astroCalculationsList.Sort();
             Display();
             ClearAllTextBoxes();
-            // toolStripStatusLabel.Text = "Calculations added.";
-            //}
-        }
-        #endregion
-        #region Display Data
-        private void Display()
-        {
-            listViewItems.Items.Clear();
-            foreach (var info in astroCalculationsList)
-            {
-                ListViewItem lvi = new ListViewItem();
-                lvi.SubItems.Add(info.GetStarVelocity());
-                lvi.SubItems.Add(info.GetStarDistance());
-                lvi.SubItems.Add(info.GetTempInKelvin());
-                lvi.SubItems.Add(info.GetEventHorizon());
-                listViewItems.Items.Add(lvi);
-            }
-            // toolStripStatusLabel.Text = "Data items displayed.";
-        }
-        #endregion
-        #region Highlight data from listview
-        private void listViewItems_MouseClick(object sender, MouseEventArgs e)
-        {
-            // ClearStatusMessage();
-            int currentItem = listViewItems.SelectedIndices[0];
-            textboxStarVelocityReadOnly.Text = astroCalculationsList[currentItem].GetStarVelocity();
-            textboxStarDistanceReadOnly.Text = astroCalculationsList[currentItem].GetStarDistance();
-            textboxTemperatureReadOnly.Text = astroCalculationsList[currentItem].GetTempInKelvin();
-            textboxEventHorizonReadOnly.Text = astroCalculationsList[currentItem].GetEventHorizon();
         }
         #endregion
         #region Delete button
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            // ClearStatusMessage();
             try
             {
                 int currentItem = listViewItems.SelectedIndices[0];
@@ -87,10 +53,8 @@ namespace ClientApplication
                     if (delRecord == DialogResult.Yes)
                     {
                         astroCalculationsList.RemoveAt(currentItem);
-                        astroCalculationsList.Sort();
-                        // ClearAllTextBoxes();
+                        ClearAllTextBoxes();
                         Display();
-                        //toolStripStatusLabel.Text = "Item deleted.";
                         // Trace.WriteLine("Selected item deleted.");
                     }
                     else
@@ -103,7 +67,6 @@ namespace ClientApplication
             catch (ArgumentOutOfRangeException)
             {
                 // Trace.WriteLine("Error! Not a valid action!");
-                // toolStripStatusLabel.Text = "Error: Not a valid action.";
             }
         }
         #endregion
@@ -122,7 +85,7 @@ namespace ClientApplication
                 string.IsNullOrWhiteSpace(textboxEventHorizon.Text) &&
                 eventHorizonPower.Value == 0)
             {
-                MessageBox.Show("textboxes are empty");
+                MessageBox.Show("Error! Textboxes are emtpy, add data.");
             }
             else
             {
@@ -162,32 +125,92 @@ namespace ClientApplication
             }
         }
         #endregion
-        #region Language Setting
+        #region Display Data
+        private void Display()
+        {
+            listViewItems.Items.Clear();
+            foreach (var info in astroCalculationsList)
+            {
+                ListViewItem lvi = new ListViewItem();
+                lvi.SubItems.Add(info.GetStarVelocity());
+                lvi.SubItems.Add(info.GetStarDistance());
+                lvi.SubItems.Add(info.GetTempInKelvin());
+                lvi.SubItems.Add(info.GetEventHorizon());
+                listViewItems.Items.Add(lvi);
+            }
+        }
+        #endregion
+        #region Highlight data from listview
+        private void listViewItems_MouseClick(object sender, MouseEventArgs e)
+        {
+            int currentItem = listViewItems.SelectedIndices[0];
+            textboxStarVelocityReadOnly.Text = astroCalculationsList[currentItem].GetStarVelocity();
+            textboxStarDistanceReadOnly.Text = astroCalculationsList[currentItem].GetStarDistance();
+            textboxTemperatureReadOnly.Text = astroCalculationsList[currentItem].GetTempInKelvin();
+            textboxEventHorizonReadOnly.Text = astroCalculationsList[currentItem].GetEventHorizon();
+        }
+        #endregion
+        #region Language ToolstripMenuItems
+
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("en");
-            Controls.Clear();
-            InitializeComponent();
-            Display();
+            ChangeLanguage("en");
         }
         private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("fr");
-            Controls.Clear();
-            InitializeComponent();
-            Display();
-
+            ChangeLanguage("fr");
         }
         private void germanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("de");
+            ChangeLanguage("de");
+        }
+
+        #endregion
+        #region Language Setting
+        private void ChangeLanguage(string language)
+        {
+            switch (language)
+            {
+                case "en":
+                    CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("en");
+                    break;
+                case "fr":
+                    CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("fr");
+                    break;
+                case "de":
+                    CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("de");
+                    break;
+            }
             Controls.Clear();
             InitializeComponent();
             Display();
         }
         #endregion
         #region Style Settings
-        private void colourToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ChangeTheme(string theme)
+        {
+            switch (theme)
+            {
+                case "NightMode":
+                    NightMode();
+                    break;
+                case "DayMode":
+                    DayMode();
+                    break;
+                case "ColorWheelStyle":
+                    ColorWheelStyle();
+                    break;
+                case "DefaultMode":
+                    DefaultMode();
+                    break;
+            }
+            Controls.Clear();
+            InitializeComponent();
+            Display();
+        }
+        #endregion
+        #region Style Methods
+        private void ColorWheelStyle()
         {
             ColorDialog colorDlg = new ColorDialog();
             if (colorDlg.ShowDialog() == DialogResult.OK)
@@ -204,7 +227,7 @@ namespace ClientApplication
                 }
             }
         }
-        private void nightModeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void NightMode()
         {
             BackgroundImage = null;
             BackColor = Color.MidnightBlue;
@@ -218,15 +241,14 @@ namespace ClientApplication
             }
             foreach (var label in Controls.OfType<Label>())
             {
-                label.ForeColor = Color.LavenderBlush;
+                label.ForeColor = Color.White;
             }
             foreach (var textBox in Controls.OfType<TextBox>())
             {
                 textBox.ForeColor = Color.LightYellow;
             }
         }
-
-        private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DayMode()
         {
             BackgroundImage = null;
             BackColor = Color.LightSalmon;
@@ -239,12 +261,50 @@ namespace ClientApplication
             }
             foreach (var label in Controls.OfType<Label>())
             {
-                label.ForeColor = Color.Goldenrod;
+                label.ForeColor = Color.Black;
             }
             foreach (var textBox in Controls.OfType<TextBox>())
             {
                 textBox.ForeColor = Color.Magenta;
             }
+        }
+        private void DefaultMode()
+        {
+            BackgroundImage = null;
+            BackColor = SystemColors.Control;
+            ForeColor = SystemColors.ControlText;
+            foreach (var button in Controls.OfType<Button>())
+            {
+                button.BackColor = SystemColors.Control;
+                button.FlatStyle = FlatStyle.Flat;
+                button.FlatAppearance.BorderColor = SystemColors.ControlDark;
+            }
+            foreach (var label in Controls.OfType<Label>())
+            {
+                label.ForeColor = SystemColors.ControlText;
+            }
+            foreach (var textBox in Controls.OfType<TextBox>())
+            {
+                textBox.ForeColor = SystemColors.ControlText;
+            }
+        }
+        #endregion
+        #region Colour ToolstripMenuItems Click 
+        private void nightModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeTheme("NightMode");
+        }
+        private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeTheme("DayMode");
+        }
+        private void colourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeTheme("ColorWheelStyle");
+        }
+        private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeTheme("DefaultMode");
         }
         #endregion
         #region Clear TextBoxes Method
@@ -316,5 +376,12 @@ namespace ClientApplication
             }
         }
         #endregion
+        #region Form Load
+        private void DataProcessing_Load(object sender, EventArgs e)
+        {
+            observedWavelengthTextbox.Focus();
+        }
+        #endregion
+
     }
 }

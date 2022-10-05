@@ -63,6 +63,7 @@
             this.textboxTemperatureReadOnly = new System.Windows.Forms.TextBox();
             this.textboxStarDistanceReadOnly = new System.Windows.Forms.TextBox();
             this.textboxStarVelocityReadOnly = new System.Windows.Forms.TextBox();
+            this.defaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventHorizonPower)).BeginInit();
             this.SuspendLayout();
@@ -131,7 +132,8 @@
             this.themeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nightModeToolStripMenuItem,
             this.lightModeToolStripMenuItem,
-            this.colourToolStripMenuItem});
+            this.colourToolStripMenuItem,
+            this.defaultToolStripMenuItem});
             resources.ApplyResources(this.themeToolStripMenuItem, "themeToolStripMenuItem");
             this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
             // 
@@ -285,6 +287,12 @@
             resources.ApplyResources(this.textboxStarVelocityReadOnly, "textboxStarVelocityReadOnly");
             this.textboxStarVelocityReadOnly.Name = "textboxStarVelocityReadOnly";
             // 
+            // defaultToolStripMenuItem
+            // 
+            this.defaultToolStripMenuItem.Name = "defaultToolStripMenuItem";
+            resources.ApplyResources(this.defaultToolStripMenuItem, "defaultToolStripMenuItem");
+            this.defaultToolStripMenuItem.Click += new System.EventHandler(this.defaultToolStripMenuItem_Click);
+            // 
             // DataProcessing
             // 
             resources.ApplyResources(this, "$this");
@@ -312,6 +320,7 @@
             this.Controls.Add(this.calculateButton);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "DataProcessing";
+            this.Load += new System.EventHandler(this.DataProcessing_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventHorizonPower)).EndInit();
@@ -356,6 +365,7 @@
         private System.Windows.Forms.TextBox textboxTemperatureReadOnly;
         private System.Windows.Forms.TextBox textboxStarDistanceReadOnly;
         private System.Windows.Forms.TextBox textboxStarVelocityReadOnly;
+        private System.Windows.Forms.ToolStripMenuItem defaultToolStripMenuItem;
     }
 }
 
