@@ -119,64 +119,76 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelStarVelocity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 15</value>
+    <value>150, 20</value>
   </data>
   <data name="labelStarVelocity.Text" xml:space="preserve">
     <value>Sterngeschwindigkeit</value>
   </data>
   <data name="labelStarDistance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 15</value>
+    <value>131, 20</value>
   </data>
   <data name="labelStarDistance.Text" xml:space="preserve">
     <value>Sternenentfernung</value>
   </data>
   <data name="labelTempInKelvin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 15</value>
+    <value>85, 20</value>
   </data>
   <data name="labelTempInKelvin.Text" xml:space="preserve">
     <value>Temperatur</value>
   </data>
   <data name="labelEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 15</value>
+    <value>116, 20</value>
   </data>
   <data name="labelEventHorizon.Text" xml:space="preserve">
     <value>Ereignishorizont</value>
   </data>
-  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
-  </data>
-  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sprache</value>
-  </data>
   <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
+    <value>170, 26</value>
   </data>
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
     <value>Englisch</value>
   </data>
   <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
+    <value>170, 26</value>
   </data>
   <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
     <value>Französisch </value>
   </data>
   <data name="germanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
+    <value>170, 26</value>
   </data>
   <data name="germanToolStripMenuItem.Text" xml:space="preserve">
     <value>Deutsch</value>
   </data>
-  <data name="themeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Thema</value>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 24</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="nightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
   </data>
   <data name="nightModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Nacht-Modus</value>
   </data>
+  <data name="lightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
   <data name="lightModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Tagesmodus</value>
   </data>
+  <data name="colourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
   <data name="colourToolStripMenuItem.Text" xml:space="preserve">
     <value>Farbe</value>
+  </data>
+  <data name="defaultToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="themeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Thema</value>
   </data>
   <data name="calculateButton.Text" xml:space="preserve">
     <value>Berechnung</value>
@@ -193,16 +205,10 @@
   <data name="columnEventHorizon.Text" xml:space="preserve">
     <value>Ereignishorizont</value>
   </data>
-  <data name="addButton.Text" xml:space="preserve">
-    <value>Hinzufügen</value>
-  </data>
   <data name="deleteButton.Text" xml:space="preserve">
     <value>Löschen</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Eingabewerte</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Berechnungsergebnisse</value>
+  <data name="addButton.Text" xml:space="preserve">
+    <value>Hinzufügen</value>
   </data>
 </root>

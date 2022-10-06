@@ -218,6 +218,7 @@
             this.listViewItems.FullRowSelect = true;
             this.listViewItems.GridLines = true;
             this.listViewItems.HideSelection = false;
+            this.listViewItems.MultiSelect = false;
             this.listViewItems.Name = "listViewItems";
             this.listViewItems.Scrollable = false;
             this.listViewItems.UseCompatibleStateImageBehavior = false;
@@ -323,6 +324,7 @@
             this.Controls.Add(this.labelStarDistance);
             this.Controls.Add(this.textboxStarDistance);
             this.Controls.Add(this.calculateButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "DataProcessing";
             this.Load += new System.EventHandler(this.DataProcessing_Load);
