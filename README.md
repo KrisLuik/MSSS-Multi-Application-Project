@@ -1,4 +1,4 @@
-# :globe_with_meridians: MSSS-Multi-Application-Project
+# :globe_with_meridians: Malin Space Science Systems (MSSS) Multi Application Project
 A multi-form application for Malin Space Science Systems (MSSS) that will connect several clients with a remote server using Named Pipes from the Inter-Process Communication Technologies and runs the same version of the application at all locations. 
 
 :dart: To run the project do the following:
