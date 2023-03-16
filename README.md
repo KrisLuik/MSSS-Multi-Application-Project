@@ -3,7 +3,7 @@ A multi-form application for Malin Space Science Systems (MSSS) that will connec
 
 :dart: To run the project do the following:
 1. Download project
-2. Click on the server application and run the program.
+2. Click on the server application and run the program
 3. Go back to main directory and click Client Application
 4. Run Client Application Program
 5. Once the application is running you can select between three different language options (English, German, and French) and you can customize the UI by selcting different themes from the drop-down menu.
